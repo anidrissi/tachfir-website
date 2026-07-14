@@ -1,0 +1,44 @@
+
+> website@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.20.64.1:3000
+- Environments: .env
+✓ Ready in 427ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+[⣷] Pulling schema from database...
+[2K[1G[✓] Pulling schema from database...
+[16:39:04] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+ GET / 200 in 15.6s (next.js: 4.7s, proxy.ts: 383ms, generate-params: 2.8s, application-code: 10.5s)
+ GET /admin 200 in 5.5s (next.js: 3.8s, application-code: 1697ms)
+ GET /en 200 in 1482ms (next.js: 28ms, proxy.ts: 10ms, generate-params: 13ms, application-code: 1444ms)
+ GET /api/media/file/cover-certification-900x506.webp 200 in 2.6s (next.js: 2.5s, application-code: 56ms)
+
+(process:28424): GLib-GObject-CRITICAL **: 16:43:10.631: value "32" of type 'gint' is invalid or out of range for property 'space' of type 'VipsInterpretation'
+ GET /api/media/file/cover-nearshore-900x506.webp 200 in 2.6s (next.js: 2.5s, application-code: 83ms)
+
+(process:28424): GLib-GObject-CRITICAL **: 16:43:10.634: value "32" of type 'gint' is invalid or out of range for property 'space' of type 'VipsInterpretation'
+ GET /api/media/file/cover-procurement-900x506.webp 200 in 2.6s (next.js: 2.5s, application-code: 85ms)
+
+(process:28424): GLib-GObject-CRITICAL **: 16:43:10.635: value "32" of type 'gint' is invalid or out of range for property 'space' of type 'VipsInterpretation'
+ GET /en/services 200 in 2.7s (next.js: 2.5s, proxy.ts: 58ms, generate-params: 2.2s, application-code: 133ms)
+ GET /en/training 200 in 2.6s (next.js: 2.5s, proxy.ts: 10ms, generate-params: 2.2s, application-code: 147ms)
+ GET /en/references 200 in 2.5s (next.js: 2.4s, proxy.ts: 8ms, generate-params: 2.1s, application-code: 113ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /en/blog 200 in 2.4s (next.js: 2.2s, proxy.ts: 6ms, generate-params: 2.1s, application-code: 160ms)
+ GET /en/contact 200 in 2.6s (next.js: 2.4s, proxy.ts: 8ms, generate-params: 2.1s, application-code: 179ms)
+ GET /en/contact 200 in 123ms (next.js: 29ms, proxy.ts: 8ms, generate-params: 10ms, application-code: 86ms)
+ GET /%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7 200 in 139ms (next.js: 8ms, proxy.ts: 5ms, generate-params: 48µs, application-code: 126ms)
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+ GET / 200 in 327ms (next.js: 18ms, proxy.ts: 13ms, generate-params: 8ms, application-code: 296ms)
+ GET / 200 in 25.1s (next.js: 3.1s, proxy.ts: 21.9s, generate-params: 18ms, application-code: 50ms)
+ GET /en 200 in 2.9s (next.js: 1139ms, proxy.ts: 182ms, generate-params: 40µs, application-code: 1531ms)
+ GET /fr 200 in 5.7s (next.js: 276ms, proxy.ts: 2.9s, generate-params: 39µs, application-code: 2.5s)
+ GET /en 200 in 5.7s (next.js: 746ms, proxy.ts: 2.9s, generate-params: 52µs, application-code: 2.0s)
+ GET /fr 200 in 2.5s (next.js: 77ms, proxy.ts: 1209ms, generate-params: 41µs, application-code: 1229ms)
+ GET /en 200 in 1273ms (next.js: 20ms, proxy.ts: 465ms, generate-params: 42µs, application-code: 787ms)
+ GET /en 200 in 420ms (next.js: 21ms, proxy.ts: 10ms, generate-params: 40µs, application-code: 389ms)
