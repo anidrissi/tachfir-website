@@ -11,10 +11,16 @@ import { localizedPaths } from '@/lib/localized-path';
  * - ignorée pendant le seed (`context.disableRevalidate`)
  * - tolérante : hors contexte Next (CLI), l'appel est simplement ignoré
  */
-async function revalidate(paths: string[], tags: string[] = []) {
+async function revalidate(paths: string[], tags: string[] = [], templates: string[] = []) {
   try {
     const { revalidatePath, revalidateTag } = await import('next/cache');
     for (const p of paths) revalidatePath(p);
+    // Routes dynamiques entières (toutes locales/slugs) — nécessaire car le
+    // hook ne connaît que le slug de la locale de la requête.
+    for (const t of templates) {
+      revalidatePath(t, 'page');
+      revalidatePath(`/(frontend)${t}`, 'page');
+    }
     // Next 16 : expiration immédiate du tag (profil { expire: 0 })
     for (const t of tags) revalidateTag(t, { expire: 0 });
   } catch {
@@ -69,7 +75,7 @@ function makeCollectionHooks(kind: 'posts' | 'formations') {
       ...detailPaths(detailRoute, slugsOf((previousDoc ?? {}) as Record<string, unknown>)),
     ];
     req.payload.logger.info(`revalidate ${kind}: ${paths.length} chemins`);
-    await revalidate(paths, ['sitemap']);
+    await revalidate(paths, ['sitemap'], [`/[locale]${detailRoute}`]);
     return doc;
   };
 
@@ -81,7 +87,7 @@ function makeCollectionHooks(kind: 'posts' | 'formations') {
       ...detailPaths(detailRoute, slugsOf(doc as Record<string, unknown>)),
     ];
     req.payload.logger.info(`revalidate ${kind} (delete): ${paths.length} chemins`);
-    await revalidate(paths, ['sitemap']);
+    await revalidate(paths, ['sitemap'], [`/[locale]${detailRoute}`]);
     return doc;
   };
 
