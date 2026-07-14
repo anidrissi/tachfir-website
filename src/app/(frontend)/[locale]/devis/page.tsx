@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CheckCircle2, ShieldCheck } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Suspense } from 'react';
+import { QuoteForm } from '@/components/forms/quote-form';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { Container } from '@/components/ui/container';
 import type { Locale } from '@/i18n/routing';
@@ -39,9 +41,10 @@ export default async function DevisPage({ params }: Props) {
 
       <section className="py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-[1fr_20rem]">
-          {/* Formulaire (étape formulaires) */}
           <div id="formulaire">
-            {/* Le composant QuoteForm est branché à l'étape « Formulaires & API ». */}
+            <Suspense>
+              <QuoteForm />
+            </Suspense>
           </div>
 
           {/* Aside réassurance */}

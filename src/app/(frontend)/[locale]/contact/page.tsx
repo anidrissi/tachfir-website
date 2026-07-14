@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { ContactForm } from '@/components/forms/contact-form';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { Container } from '@/components/ui/container';
 import { whatsappHref } from '@/config/company';
@@ -43,9 +44,8 @@ export default async function ContactPage({ params }: Props) {
 
       <section className="py-12 sm:py-16">
         <Container className="grid gap-12 lg:grid-cols-[1fr_20rem]">
-          {/* Formulaire (étape formulaires) */}
           <div id="formulaire">
-            {/* Le composant ContactForm est branché à l'étape « Formulaires & API ». */}
+            <ContactForm />
           </div>
 
           {/* NAP */}
