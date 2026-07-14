@@ -5,7 +5,7 @@ export default function NotFoundPage() {
   const t = useTranslations('notFound');
 
   return (
-    <main className="flex flex-1 flex-col items-center justify-center px-4 py-24 text-center">
+    <div className="flex flex-1 flex-col items-center justify-center px-4 py-24 text-center">
       <p className="font-display text-7xl font-bold text-primary" aria-hidden>
         404
       </p>
@@ -31,6 +31,6 @@ export default function NotFoundPage() {
           {t('contact')}
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

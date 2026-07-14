@@ -96,3 +96,5 @@ export const routing = defineRouting({
 
 export type Locale = (typeof routing.locales)[number];
 export type AppPathname = keyof typeof routing.pathnames;
+/** Routes sans segment dynamique (utilisables en href direct). */
+export type StaticAppPathname = Exclude<AppPathname, '/formations/[slug]' | '/blog/[slug]'>;

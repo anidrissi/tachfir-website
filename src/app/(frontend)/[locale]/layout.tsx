@@ -1,15 +1,26 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/header';
+import { WhatsAppButton } from '@/components/layout/whatsapp-button';
+import { AlternatesProvider } from '@/components/providers/alternates-provider';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { company } from '@/config/company';
 import { fontVariables } from '@/lib/fonts';
-import { routing } from '@/i18n/routing';
+import { routing, type Locale } from '@/i18n/routing';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(company.siteUrl),
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#050f1c' },
+  ],
 };
 
 export function generateStaticParams() {
@@ -28,6 +39,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
   setRequestLocale(locale);
 
+  const t = await getTranslations('common');
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
@@ -40,7 +52,20 @@ export default async function LocaleLayout({ children, params }: Props) {
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <AlternatesProvider>
+              <a
+                href="#content"
+                className="sr-only focus:not-sr-only focus:absolute focus:start-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+              >
+                {t('skipToContent')}
+              </a>
+              <Header />
+              <main id="content" className="flex flex-1 flex-col">
+                {children}
+              </main>
+              <Footer locale={locale as Locale} />
+              <WhatsAppButton locale={locale as Locale} />
+            </AlternatesProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
