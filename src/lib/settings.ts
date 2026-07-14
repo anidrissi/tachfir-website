@@ -1,10 +1,11 @@
 import { company } from '@/config/company';
 import type { Locale } from '@/i18n/routing';
+import { getPayloadClient } from '@/lib/payload';
 
 /**
  * Paramètres du site (NAP, réseaux, bandeaux).
- * Source de vérité : global `settings` du CMS Payload (branché à l'étape CMS),
- * avec repli sur src/config/company.ts tant que le CMS n'est pas renseigné.
+ * Source de vérité : global `settings` du CMS Payload,
+ * avec repli sur src/config/company.ts pour toute valeur absente.
  */
 export type SiteSettings = {
   address: string;
@@ -16,7 +17,7 @@ export type SiteSettings = {
   ice: string;
   rc: string;
   deliveryZones: string;
-  /** Bandeau de réassurance près des CTA (ex. « Réponse sous 24-48 h ») — null → texte par défaut des messages */
+  /** Bandeau de réassurance près des CTA — null → texte par défaut des messages */
   responseBanner: string | null;
 };
 
@@ -33,8 +34,25 @@ const fallback: SiteSettings = {
   responseBanner: null,
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export async function getSettings(_locale: Locale): Promise<SiteSettings> {
-  // Le branchement CMS (global `settings`) est ajouté avec l'intégration Payload.
-  return fallback;
+export async function getSettings(locale: Locale): Promise<SiteSettings> {
+  try {
+    const payload = await getPayloadClient();
+    const doc = await payload.findGlobal({ slug: 'settings', locale, fallbackLocale: 'ar' });
+    return {
+      address: doc?.address || fallback.address,
+      city: doc?.city || fallback.city,
+      phone: doc?.phone || fallback.phone,
+      whatsapp: doc?.whatsapp || fallback.whatsapp,
+      email: doc?.email || fallback.email,
+      linkedin: doc?.linkedin || fallback.linkedin,
+      ice: doc?.ice || fallback.ice,
+      rc: doc?.rc || fallback.rc,
+      deliveryZones: doc?.deliveryZones || fallback.deliveryZones,
+      responseBanner: doc?.responseBanner || null,
+    };
+  } catch (err) {
+    // Base indisponible (premier build, CI sans seed…) : placeholders visibles.
+    console.warn('settings: repli sur company.ts —', (err as Error).message);
+    return fallback;
+  }
 }
