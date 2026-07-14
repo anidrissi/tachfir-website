@@ -14,6 +14,10 @@ import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(company.siteUrl),
+  title: {
+    template: '%s | Tachfir',
+    default: 'Tachfir — Building Trust through Secure Tech',
+  },
 };
 
 export const viewport: Viewport = {

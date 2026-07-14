@@ -66,12 +66,1004 @@
     "services": "Our services",
     "contact": "Contact us"
   },
+  "meta": {
+    "home": {
+      "title": "IT services company in Morocco",
+      "description": "Web & mobile development, cybersecurity, nearshore IT consulting, certified training and IT hardware supply. Get a quote within 24–48 h."
+    },
+    "services": {
+      "title": "Our IT services: development, security, consulting",
+      "description": "Four areas of expertise plus hardware supply: web & mobile development, cybersecurity, IT consulting & nearshore, training. One trusted partner."
+    },
+    "serviceDev": {
+      "title": "Software development in Morocco",
+      "description": "Custom web and mobile applications: React, Spring Boot, AWS/Azure, Figma UX/UI, Scrum delivery. Security built in from day one. Quote within 24–48 h."
+    },
+    "serviceCyber": {
+      "title": "Cybersecurity & pentesting in Morocco",
+      "description": "Penetration tests and security audits by certified consultants: actionable report, remediation plan, retest included. Protect your systems now."
+    },
+    "serviceConsulting": {
+      "title": "Nearshore IT consulting in Morocco",
+      "description": "Staff augmentation, project assistance, application maintenance: certified consultants for Morocco and France. Same time zone, controlled costs."
+    },
+    "serviceSupply": {
+      "title": "IT hardware supply in Morocco",
+      "description": "PCs, servers, networking, licenses: send your purchase order or tender, receive a quote within 24–48 h. Compliant invoicing, warranty and support."
+    },
+    "formations": {
+      "title": "Certified IT training in Morocco",
+      "description": "IT training aligned with recognized certifications: development, cloud, DevOps, cybersecurity, agile, office tools. On-site, remote or in-company."
+    },
+    "references": {
+      "title": "Client references: 20+ organizations trust us",
+      "description": "Intelcia, Proxiad, Alten, SFR, Fuzyo… Discover the companies and public administrations that trust Tachfir with their IT projects."
+    },
+    "certifications": {
+      "title": "Our consultants' IT certifications",
+      "description": "PSM, SAFe 5, Oracle Java, CCNA, CyberOps, CKAD, Terraform, OCI… 11 certifications that prove our teams' real expertise."
+    },
+    "blog": {
+      "title": "Blog: public procurement, nearshore, IT training",
+      "description": "Practical guides for CIOs and public buyers: IT purchase orders, nearshore outsourcing to Morocco, in-demand IT certifications."
+    },
+    "devis": {
+      "title": "Request a quote or send your purchase order",
+      "description": "Development, cybersecurity, consulting, training or hardware supply: describe your need, attach your PO or specs — reply within 24–48 h."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "A question, a project, an order? Contact Tachfir by form, email, phone or WhatsApp. Reply within 24–48 h."
+    },
+    "about": {
+      "title": "About: the Moroccan IT firm that encrypts trust",
+      "description": "Tachfir (تشفير = encryption): a Moroccan IT services company with security in its DNA. 30+ certified experts at the service of your projects."
+    },
+    "legal": {
+      "title": "Legal notice",
+      "description": "Legal notice for tachfir.com: publisher, hosting provider, intellectual property and applicable law."
+    },
+    "privacy": {
+      "title": "Privacy policy (Law 09-08)",
+      "description": "How Tachfir collects, uses and protects your personal data, in line with Moroccan law 09-08 and CNDP requirements."
+    }
+  },
   "home": {
     "hero": {
+      "eyebrow": "Building Trust through Secure Tech",
       "title": "IT services company in Morocco — security at the core of every project",
-      "subtitle": "Web & mobile development, cybersecurity, IT consulting, training and hardware supply — for public administrations and businesses in Morocco and France.",
+      "subtitle": "Web & mobile development, cybersecurity, IT consulting & nearshore, certified training and IT hardware supply — for public administrations, Moroccan businesses and French companies.",
       "ctaQuote": "Request a quote",
       "ctaServices": "Explore our services"
+    },
+    "stats": {
+      "clients": "clients served",
+      "projects": "projects delivered",
+      "experts": "certified experts"
+    },
+    "clients": {
+      "title": "They trust us"
+    },
+    "poles": {
+      "eyebrow": "What we do",
+      "title": "Four practices, one standard: security",
+      "intro": "From application design to upskilling your teams, every engagement is built to last — and to resist.",
+      "dev": {
+        "title": "Web & mobile development",
+        "text": "Custom web, mobile and UX/UI work. React, Spring Boot, AWS, Azure, Figma — delivered in Scrum sprints, secured by design."
+      },
+      "cyber": {
+        "title": "Cybersecurity",
+        "text": "Penetration tests and security audits by certified consultants. Clear report, remediation plan, retest included."
+      },
+      "consulting": {
+        "title": "IT consulting & nearshore",
+        "text": "Staff augmentation, project assistance, maintenance: certified profiles that strengthen your teams in Morocco and France, with transparent reporting."
+      },
+      "formation": {
+        "title": "Training",
+        "text": "Certified IT training delivered by practitioners: development, cloud, DevOps, cybersecurity, agile, office tools."
+      },
+      "more": "See details"
+    },
+    "certifications": {
+      "eyebrow": "Proven expertise",
+      "title": "Certified consultants, not promises",
+      "text": "PSM, SAFe 5, Oracle Java, CCNA, Cisco CyberOps, CKAD, Terraform, Oracle Cloud… our certifications are the ones your projects require.",
+      "cta": "See all 11 certifications"
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What our clients say"
+    },
+    "formations": {
+      "eyebrow": "Upskilling",
+      "title": "Certified IT training",
+      "intro": "Grow your teams' skills with training delivered by certified consultants.",
+      "cta": "Full catalog"
+    },
+    "supply": {
+      "eyebrow": "Hardware supply",
+      "title": "IT hardware on purchase order",
+      "text": "No online catalog: every request is handled case by case. Administrations and companies, send your needs or your purchase order — you receive a quote within 24–48 h.",
+      "cta": "Send a purchase order",
+      "ctaSecondary": "How it works"
+    },
+    "posts": {
+      "eyebrow": "Blog",
+      "title": "Latest articles",
+      "cta": "All articles"
+    },
+    "finalCta": {
+      "title": "A project, a mission, an order?",
+      "text": "Describe your need in 2 minutes: an expert gets back to you with a quote or a concrete action plan.",
+      "cta": "Request a quote",
+      "ctaAlt": "Write to us"
+    }
+  },
+  "servicesHub": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "One IT partner, five ways to serve you",
+      "intro": "Four practices and a hardware supply activity: Tachfir covers the full cycle of your IT needs, with security as the common thread."
+    },
+    "cards": {
+      "dev": {
+        "title": "Web & mobile development",
+        "text": "Custom websites, business platforms and mobile apps, designed with polished UX and delivered in short cycles."
+      },
+      "cyber": {
+        "title": "Cybersecurity",
+        "text": "Penetration testing, security audits and remediation support to protect your digital assets."
+      },
+      "consulting": {
+        "title": "IT consulting & nearshore",
+        "text": "Staff augmentation, project assistance and maintenance in Morocco and for France: the right profiles, at the right time, at the right cost."
+      },
+      "formation": {
+        "title": "Certified training",
+        "text": "An IT training catalog aligned with the certifications our own consultants hold."
+      },
+      "supply": {
+        "title": "IT hardware supply",
+        "text": "Workstations, servers, networking, licenses: we answer purchase orders and tenders, with no online catalog — tailored quotes only.",
+        "badge": "On purchase order"
+      }
+    },
+    "nearshore": {
+      "eyebrow": "Morocco ↔ France",
+      "title": "Nearshore that speaks your language",
+      "text": "French companies: outsource your development to Morocco without the friction of far-shore. Near-identical time zone, French-speaking teams, optimized costs and a clear contractual framework.",
+      "cta": "Discover the nearshore offer"
+    }
+  },
+  "serviceDev": {
+    "hero": {
+      "eyebrow": "Web & mobile development",
+      "title": "Software development in Morocco, secure by design",
+      "intro": "We design and build your websites, business platforms and mobile applications with a double standard: flawless user experience, and security woven into every line of code.",
+      "cta": "Price my project"
+    },
+    "problem": {
+      "title": "Your challenge",
+      "text": "Successful software is not just functional: it must be fast, maintainable, scalable — and safe. Too many projects sink under invisible technical debt, drifting deadlines or vulnerabilities discovered too late. Our answer: short cycles, proven technology choices and systematic security reviews."
+    },
+    "approach": {
+      "title": "How we work",
+      "steps": [
+        {
+          "title": "Scoping & workshops",
+          "text": "Business understanding, scope, prioritized user stories and a transparent estimate."
+        },
+        {
+          "title": "UX/UI & prototyping",
+          "text": "Figma mockups tested with your users before a single line of code is written."
+        },
+        {
+          "title": "Iterative development",
+          "text": "Two-week Scrum sprints, regular demos, continuous integration and cross code reviews."
+        },
+        {
+          "title": "Quality & security",
+          "text": "Automated tests, OWASP checks, security review before every production release."
+        },
+        {
+          "title": "Go-live & maintenance",
+          "text": "Deployment, monitoring, corrective and evolutionary maintenance with service commitments."
+        }
+      ]
+    },
+    "stack": {
+      "title": "Our stack",
+      "items": ["React / Next.js", "Spring Boot / Java", "AWS & Azure", "Figma (UX/UI)", "Scrum / SAFe", "CI/CD & containers"]
+    },
+    "deliverables": {
+      "title": "What you receive",
+      "items": [
+        "Prioritized, priced backlog",
+        "Figma mockups and design system",
+        "Documented source code (you own it)",
+        "Staging and production environments",
+        "Automated tests and coverage report",
+        "Operations documentation and handover training"
+      ]
+    },
+    "why": {
+      "title": "Why Tachfir",
+      "points": [
+        {
+          "title": "Certified where it matters",
+          "text": "Oracle Java, Scrum PSM, SAFe, AWS/Azure/OCI cloud: certifications held by the developers who actually work on your project."
+        },
+        {
+          "title": "Security in our DNA",
+          "text": "Tachfir means “encryption”. Every application is reviewed by our cybersecurity practice before going live."
+        },
+        {
+          "title": "Close and responsive",
+          "text": "A single point of contact and answers within 24–48 h, in Morocco and for your teams in France."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What kinds of projects do you build?",
+          "a": "Corporate websites and e-services, business web platforms (management tools, portals, dashboards), iOS/Android mobile apps, rebuilds of existing applications and API integrations. We work with public administrations as well as SMEs and larger companies."
+        },
+        {
+          "q": "Which technologies do you use?",
+          "a": "Mainly React/Next.js on the front end, Spring Boot (Java) on the back end, AWS or Azure hosting, and Figma for design. The final choice depends on your context: we always favor maintainability and the availability of skills on the market."
+        },
+        {
+          "q": "How does a typical project run?",
+          "a": "A one-to-two-week scoping phase, then two-week development sprints with a demo at every iteration. You see the product move forward continuously and can reprioritize at each sprint."
+        },
+        {
+          "q": "How much does custom development cost?",
+          "a": "It depends on the scope. After a first exchange, we send a range-based estimate within 24–48 h, then a detailed quote after scoping. No hidden costs: everything is written down."
+        },
+        {
+          "q": "Do you provide maintenance after go-live?",
+          "a": "Yes. Our application maintenance contracts cover corrective work, evolutions and monitoring, with response-time commitments matched to the criticality of your application."
+        },
+        {
+          "q": "How is security handled?",
+          "a": "Systematic code reviews, OWASP best practices, secrets management, encryption of sensitive data and an internal penetration test before go-live for critical applications. It is our trademark."
+        }
+      ]
+    },
+    "related": {
+      "title": "Go further",
+      "quote": "Price my project",
+      "formation": "Full-stack React & Spring Boot training",
+      "article": "Read: nearshore in Morocco for French companies"
+    }
+  },
+  "serviceCyber": {
+    "hero": {
+      "eyebrow": "Cybersecurity",
+      "title": "Cybersecurity & pentesting in Morocco: test your defenses",
+      "intro": "Penetration tests, security audits and remediation support, delivered by certified consultants. Find your vulnerabilities before someone else does.",
+      "cta": "Schedule an audit"
+    },
+    "problem": {
+      "title": "Your challenge",
+      "text": "Attacks don't send a warning: ransomware, data leaks, account takeovers. For an administration or a company, the question is no longer whether you will be targeted, but when — and how prepared you will be. A regular penetration test turns that uncertainty into a concrete action plan."
+    },
+    "approach": {
+      "title": "How we work",
+      "steps": [
+        {
+          "title": "Scoping & rules of engagement",
+          "text": "Scope, scenarios (black, grey, white box), intervention windows and written authorizations."
+        },
+        {
+          "title": "Reconnaissance & mapping",
+          "text": "Inventory of the attack surface: exposed services, applications, configurations, accounts."
+        },
+        {
+          "title": "Controlled exploitation",
+          "text": "Real but contained intrusion attempts, without disrupting production, with evidence."
+        },
+        {
+          "title": "Report & remediation plan",
+          "text": "Executive summary for management, technical detail for your teams, prioritized by actual risk."
+        },
+        {
+          "title": "Retest",
+          "text": "Verification after remediation: identified flaws are properly closed, with a final report."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "Your deliverables",
+      "items": [
+        "Executive report readable by a board",
+        "Detailed technical report with proof of exploitation",
+        "Remediation plan prioritized by criticality",
+        "Debrief session with your teams",
+        "Verification retest included",
+        "Test attestation (usable for your clients and tenders)"
+      ]
+    },
+    "why": {
+      "title": "Why Tachfir",
+      "points": [
+        {
+          "title": "Field certifications",
+          "text": "Cisco CyberOps Associate, CCNA — our consultants understand the infrastructure they test, not just the attack tools."
+        },
+        {
+          "title": "Actionable reports",
+          "text": "No raw scanner output: every vulnerability is verified, contextualized and paired with a concrete fix."
+        },
+        {
+          "title": "Contractual confidentiality",
+          "text": "Systematic NDA, data processed in Morocco, Law 09-08 compliance. Your test results never leave the agreed circle."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is the difference between a penetration test and a security audit?",
+          "a": "An audit assesses your overall posture (configurations, policies, architecture) through documentation and technical analysis. A penetration test simulates a real attack to prove what an attacker could actually achieve. They complement each other."
+        },
+        {
+          "q": "How often should we test?",
+          "a": "At least once a year, and after every major change (new application, infrastructure overhaul, opening a service to the public). Organizations handling sensitive data usually test every six months."
+        },
+        {
+          "q": "Can the test disrupt our production systems?",
+          "a": "No. The rules of engagement define intervention windows, excluded systems and forbidden techniques. Destructive tests are never run without explicit agreement and a dedicated environment."
+        },
+        {
+          "q": "What does the report contain?",
+          "a": "An executive summary (overall risk level, trends), the detail of each vulnerability with proof of exploitation, its criticality in context, and concrete remediation recommendations. A retest then verifies the fixes."
+        },
+        {
+          "q": "Do you work with the public sector?",
+          "a": "Yes. We answer purchase orders and tenders from administrations and public institutions, with compliant invoicing (ICE, RC) and reinforced confidentiality clauses."
+        },
+        {
+          "q": "Do you follow recognized methodologies?",
+          "a": "Our tests build on OWASP references (web and mobile) and PTES good practices, adapted to your context. Every engagement is documented and reproducible."
+        }
+      ]
+    },
+    "related": {
+      "title": "Go further",
+      "quote": "Schedule an audit",
+      "formation": "Operational cybersecurity training",
+      "article": "Read: the most in-demand IT certifications in Morocco"
+    }
+  },
+  "serviceConsulting": {
+    "hero": {
+      "eyebrow": "IT consulting & nearshore",
+      "title": "Nearshore IT consulting in Morocco — the right profiles for Morocco and France",
+      "intro": "Staff augmentation, project assistance, application maintenance: we strengthen your teams with certified consultants, in Morocco or remotely for your projects in France. No heaviness, transparent reporting.",
+      "cta": "Find a profile"
+    },
+    "problem": {
+      "title": "Your challenge",
+      "text": "Hiring a good developer or an experienced project manager takes months — and your projects won't wait. For French companies there is also the cost equation: the talent exists, but not always at the right rate. Moroccan nearshore answers both: certified skills, available quickly, in your time zone and your language."
+    },
+    "approach": {
+      "title": "How we work",
+      "steps": [
+        {
+          "title": "Need qualification",
+          "text": "Skills, seniority, project context, duration: we scope precisely before proposing."
+        },
+        {
+          "title": "Pre-screened profiles",
+          "text": "Qualified CVs and technical interviews organized quickly — you validate, we commit."
+        },
+        {
+          "title": "Guided onboarding",
+          "text": "Structured onboarding, secured environment, daily check-ins during the first weeks."
+        },
+        {
+          "title": "Steering & reporting",
+          "text": "Regular activity reports, agreed KPIs, monthly governance meeting."
+        },
+        {
+          "title": "Controlled scale-up",
+          "text": "Team extension, knowledge transfer or reversibility: everything is contractual."
+        }
+      ]
+    },
+    "nearshoreArgs": {
+      "title": "Nearshore Morocco: the winning equation for France",
+      "items": [
+        {
+          "title": "Aligned time zone",
+          "text": "0 to 1 hour difference with Paris: your teams work in real time, not in shifts."
+        },
+        {
+          "title": "Native French",
+          "text": "Meetings, documentation, code reviews: everything happens in French, without friction."
+        },
+        {
+          "title": "Optimized costs",
+          "text": "Rates significantly below equivalent services in France, with equally certified skills."
+        },
+        {
+          "title": "Clear framework",
+          "text": "Adapted contracts, GDPR clauses, confidentiality and intellectual property locked down."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "How we engage",
+      "items": [
+        "Staff augmentation: one or more consultants embedded in your teams",
+        "Project assistance: scoping, requirements, project steering",
+        "Application maintenance (AM) with service commitments",
+        "Dedicated nearshore team managed by Tachfir",
+        "IT audit and master plan",
+        "Knowledge transfer and change support"
+      ]
+    },
+    "why": {
+      "title": "Why Tachfir",
+      "points": [
+        {
+          "title": "Certified consultants",
+          "text": "PSM, SAFe, Java, cloud, Kubernetes: our teams' certifications are verifiable — and verified by our most demanding clients."
+        },
+        {
+          "title": "Used to large accounts",
+          "text": "Intelcia, Proxiad, Alten, SFR: we know the quality and reporting requirements of large organizations."
+        },
+        {
+          "title": "Committed for the long run",
+          "text": "Real mission follow-up, managed replacement if needed, and one goal: every consultant should bring more than the job description."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is the difference between staff augmentation and fixed price?",
+          "a": "In staff augmentation, you manage the consultant embedded in your teams and pay for time spent. In fixed price, we commit to a result, a deadline and a price. Application maintenance often combines both: a fixed base plus work units."
+        },
+        {
+          "q": "Why choose nearshore in Morocco over far offshore?",
+          "a": "Same time zone as Paris (0–1 h difference), fluent French, easy travel (a 3-hour flight), a close working culture and a legal framework proven by hundreds of French companies already operating here. You keep the responsiveness of a local team, at nearshore cost."
+        },
+        {
+          "q": "How quickly can a consultant start?",
+          "a": "For common skills (Java/React development, DevOps, QA), we usually present profiles within one to two weeks. The actual start depends on your validation processes and the access to be provisioned."
+        },
+        {
+          "q": "How do you handle data protection (GDPR / Law 09-08)?",
+          "a": "Standard contractual clauses for transfers, named and logged access, segregated environments, consultant awareness training. Morocco has its own framework (Law 09-08, CNDP) which we apply natively."
+        },
+        {
+          "q": "What kinds of profiles do you provide?",
+          "a": "Front/back/full-stack developers, DevOps and cloud engineers (AWS, Azure, OCI, Kubernetes), cybersecurity consultants, QA engineers, PSM/SAFe-certified Scrum Masters and project managers, and business analysts."
+        },
+        {
+          "q": "Can we start small before scaling?",
+          "a": "We even recommend it: many of our clients start with one consultant or a small maintenance scope, then extend the team once trust and processes are in place."
+        }
+      ]
+    },
+    "related": {
+      "title": "Go further",
+      "quote": "Describe my need",
+      "formation": "Agile project management Scrum & SAFe training",
+      "article": "Read: nearshore in Morocco, why French companies outsource"
+    }
+  },
+  "serviceSupply": {
+    "hero": {
+      "eyebrow": "IT hardware supply",
+      "title": "IT hardware supply in Morocco, on purchase order",
+      "intro": "No online catalog: every request is handled case by case. Send your needs, your purchase order or your tender — you receive a quote within 24–48 h.",
+      "cta": "Send your purchase order",
+      "ctaWhatsApp": "Chat on WhatsApp"
+    },
+    "families": {
+      "title": "Hardware families covered",
+      "intro": "We supply public administrations and Moroccan companies across the whole IT spectrum:",
+      "items": [
+        {
+          "title": "Workstations & laptops",
+          "text": "Desktop PCs, professional laptops, workstations, monitors and accessories."
+        },
+        {
+          "title": "Servers & storage",
+          "text": "Rack and tower servers, NAS/SAN, backup, UPS units."
+        },
+        {
+          "title": "Networking & security",
+          "text": "Switches, routers, Wi-Fi access points, firewalls, access control."
+        },
+        {
+          "title": "Printing & scanning",
+          "text": "Printers, multifunction devices, production scanners, consumables."
+        },
+        {
+          "title": "Software licenses",
+          "text": "Operating systems, office suites, security, virtualization — perpetual or subscription."
+        },
+        {
+          "title": "Consumables & accessories",
+          "text": "Toners, cabling, peripherals, spare parts and small connectivity."
+        }
+      ]
+    },
+    "publicSector": {
+      "eyebrow": "Public sector & companies",
+      "title": "Built for public buyers",
+      "items": [
+        "Response to purchase orders and calls for tenders",
+        "Compliant invoicing: ICE, RC, contract references",
+        "Delivery deadlines committed in writing",
+        "Manufacturer warranty, extensions available",
+        "After-sales service and managed replacement",
+        "Delivery: {zones}"
+      ]
+    },
+    "process": {
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "Your request",
+          "text": "Send your needs, PO or specifications via the form, by email or WhatsApp."
+        },
+        {
+          "title": "Quote within 24–48 h",
+          "text": "You receive a detailed quote: references, prices, lead times, warranty."
+        },
+        {
+          "title": "Validation",
+          "text": "Purchase order or contract award — we launch procurement."
+        },
+        {
+          "title": "Delivery & installation",
+          "text": "On-site delivery, installation and commissioning if requested, acceptance report."
+        },
+        {
+          "title": "Invoicing & support",
+          "text": "Invoice compliant with your process (ICE, RC), warranty and support ensured."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Why is there no online catalog?",
+          "a": "Because IT hardware prices and availability change constantly, and every organization has its own constraints (compatibility, warranty, budget). A tailored quote within 24–48 h is more reliable than an outdated catalog."
+        },
+        {
+          "q": "Who can order from Tachfir?",
+          "a": "Public administrations and institutions (by purchase order or contract), private companies and associations. We provide the administrative documents required by each purchasing process."
+        },
+        {
+          "q": "What are your lead times?",
+          "a": "The quote is sent within 24–48 working hours. Delivery times depend on the references and are stated — and committed — in the quote."
+        },
+        {
+          "q": "How are warranty and after-sales service handled?",
+          "a": "All hardware is covered by the manufacturer's warranty, with extensions available. In case of failure, we handle the diagnosis and the replacement or repair process."
+        },
+        {
+          "q": "Do you answer calls for tenders?",
+          "a": "Yes. We prepare complete bid files (administrative, technical, financial) and meet the requirements of Moroccan public procurement: references, ICE, RC, certificates."
+        }
+      ]
+    },
+    "cta": {
+      "title": "A hardware need? Let's price it.",
+      "text": "Attach your purchase order, specifications or a simple list of needs: a detailed quote comes back within 24–48 h.",
+      "button": "Send my request"
+    }
+  },
+  "formationsPage": {
+    "hero": {
+      "eyebrow": "Training",
+      "title": "Certified IT training in Morocco",
+      "intro": "Training designed and delivered by certified consultants, aligned with the certifications the market demands: development, cloud, DevOps, cybersecurity, agile and office tools."
+    },
+    "filters": {
+      "all": "All",
+      "label": "Filter by category"
+    },
+    "categories": {
+      "developpement": "Development",
+      "cloud": "Cloud",
+      "devops": "DevOps",
+      "cybersecurite": "Cybersecurity",
+      "agile": "Agile",
+      "bureautique": "Office tools"
+    },
+    "card": {
+      "duration": "Duration",
+      "modalities": "Formats",
+      "details": "View course"
+    },
+    "modalities": {
+      "presentiel": "On-site",
+      "distanciel": "Remote",
+      "intra": "In-company"
+    },
+    "empty": "The catalog is being updated. Contact us to learn about upcoming sessions.",
+    "detail": {
+      "objectives": "Learning objectives",
+      "program": "Program",
+      "audience": "Target audience",
+      "prerequisites": "Prerequisites",
+      "duration": "Duration",
+      "modalities": "Formats",
+      "cta": "Request a training quote",
+      "ctaIntra": "This course is also available in-company, adapted to your context.",
+      "backToCatalog": "Back to catalog"
+    },
+    "why": {
+      "title": "Why train with Tachfir",
+      "points": [
+        {
+          "title": "Practitioner trainers",
+          "text": "Our trainers are the consultants who deliver our projects: they teach what they practice."
+        },
+        {
+          "title": "Certification-aligned",
+          "text": "Each path prepares for the recognized certifications of its field (PSM, CKAD, Terraform, OCI…)."
+        },
+        {
+          "title": "Tailored formats",
+          "text": "On-site, remote or in-company: the format adapts to your teams and constraints."
+        }
+      ]
+    },
+    "cta": {
+      "title": "A training need for your team?",
+      "text": "Describe your context: we build the right path, with a quote within 24–48 h.",
+      "button": "Request a training quote"
+    }
+  },
+  "referencesPage": {
+    "hero": {
+      "eyebrow": "References",
+      "title": "They build with us",
+      "intro": "International IT firms, telecom operators, public administrations and SMEs: more than 20 organizations trust Tachfir to build, secure and run their IT."
+    },
+    "logos": {
+      "title": "Our client references"
+    },
+    "stats": {
+      "title": "Tachfir in numbers",
+      "clients": "clients served",
+      "projects": "projects delivered",
+      "experts": "certified experts"
+    },
+    "sectors": {
+      "title": "Sectors served",
+      "items": [
+        "IT services & consulting",
+        "Telecoms & operators",
+        "Customer relations & BPO",
+        "Public sector & administrations",
+        "Financial services",
+        "Growing SMEs"
+      ]
+    },
+    "testimonials": {
+      "title": "In our clients' words"
+    },
+    "cta": {
+      "title": "What if the next reference was you?",
+      "button": "Talk about your project"
+    }
+  },
+  "certificationsPage": {
+    "hero": {
+      "eyebrow": "Certifications",
+      "title": "Expertise, with proof",
+      "intro": "At Tachfir, certifications are not a marketing claim: they are held by the consultants who work on your projects. Here is the exact list."
+    },
+    "groups": {
+      "agile": {
+        "title": "Agility & delivery",
+        "items": ["Professional Scrum Master (PSM)", "Certified SAFe® 5"]
+      },
+      "dev": {
+        "title": "Development",
+        "items": ["Oracle Certified Professional Java", "Oracle Certified Expert Java EE"]
+      },
+      "network": {
+        "title": "Networking & cybersecurity",
+        "items": ["CCNA Switching / Routing / Wireless", "Cisco CyberOps Associate"]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "items": [
+          "CKAD — Certified Kubernetes Application Developer",
+          "HashiCorp Terraform Associate (003)",
+          "Oracle Cloud Infrastructure Certified",
+          "OCI AI Certified",
+          "OCI Generative AI Certified"
+        ]
+      }
+    },
+    "why": {
+      "title": "What it changes for you",
+      "points": [
+        {
+          "title": "Less risk",
+          "text": "Standardized practices verified by independent bodies — not claims."
+        },
+        {
+          "title": "More velocity",
+          "text": "A certified consultant applies proven patterns instead of reinventing — you save weeks."
+        },
+        {
+          "title": "Knowledge transfer",
+          "text": "These same certifications structure our training catalog: your teams benefit too."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Need these skills on your project?",
+      "buttonConsulting": "Strengthen my team",
+      "buttonFormations": "Train my teams"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Guides and landmarks for your IT decisions",
+      "intro": "Public procurement, nearshore, certifications, security: concrete articles written for CIOs, public buyers and decision-makers."
+    },
+    "empty": "The first articles are coming very soon. Check back shortly!",
+    "publishedOn": "Published on",
+    "by": "by",
+    "backToBlog": "Back to blog",
+    "share": "Share",
+    "related": {
+      "title": "On the same topic",
+      "service": "Related service",
+      "cta": "Request a quote"
+    },
+    "categories": {
+      "marches-publics": "Public procurement",
+      "nearshore": "Nearshore",
+      "formation": "Training",
+      "cybersecurite": "Cybersecurity",
+      "guides": "Guides",
+      "actualites": "News"
+    }
+  },
+  "devisPage": {
+    "hero": {
+      "eyebrow": "Quote / Purchase order",
+      "title": "Describe your need, get a concrete answer",
+      "intro": "Development, cybersecurity, consulting, training or hardware supply: fill in the form, attach your purchase order or specifications if you have them — an expert replies within 24–48 h."
+    },
+    "aside": {
+      "title": "What happens next",
+      "steps": [
+        "Your request goes directly to the relevant team",
+        "An expert calls or writes back within 24–48 h",
+        "You receive a detailed quote or a meeting proposal",
+        "No commitment until you sign"
+      ],
+      "confidential": "Your information remains confidential and is never shared with third parties (Law 09-08)."
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your project",
+      "intro": "A question, a need, an order? Write to us: we reply within 24–48 working hours."
+    },
+    "info": {
+      "title": "Contact details",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "mapPending": "[PENDING — map to be embedded once the address is confirmed]"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "Tachfir: trust, encrypted",
+      "intro": "“Tachfir” (تشفير) means encryption in Arabic. The name is no accident: security has been our DNA since day one."
+    },
+    "story": {
+      "title": "Our story",
+      "text1": "Tachfir was born in Morocco from a simple observation: organizations don't need more IT vendors, they need vendors they can trust. Teams that deliver what they promise, secure what they build and pass on what they know.",
+      "text2": "Today, more than 30 certified experts support international IT firms, telecom operators, public administrations and SMEs — in Morocco and France — across four practices: development, cybersecurity, consulting and training, complemented by IT hardware supply."
+    },
+    "values": {
+      "title": "Our values",
+      "items": [
+        {
+          "title": "Trust",
+          "text": "Earned through action: written commitments, transparency on costs and deadlines, code you own."
+        },
+        {
+          "title": "Security",
+          "text": "Our name says it: every deliverable goes through the security filter, whichever practice produced it."
+        },
+        {
+          "title": "Rigor",
+          "text": "Certifications kept up to date, cross reviews, continuous improvement: the bar is not negotiable."
+        },
+        {
+          "title": "Transmission",
+          "text": "We train our clients in what we practice — a learning company is a stronger company."
+        }
+      ]
+    },
+    "team": {
+      "title": "The team",
+      "text": "Developers, pentesters, cloud and DevOps consultants, trainers: a team of 30+ experts with verifiable certifications, led by engineers who still write code.",
+      "note": "[PENDING — team photos and bios to be provided]"
+    },
+    "cta": {
+      "title": "Let's work together",
+      "button": "Contact us"
+    }
+  },
+  "legalPage": {
+    "title": "Legal notice",
+    "updated": "Last updated:",
+    "sections": [
+      {
+        "title": "Site publisher",
+        "text": "The website www.tachfir.com is published by Tachfir, a company incorporated under Moroccan law.\nAddress: {address}, {city}\nICE: {ice} — RC: {rc}\nEmail: {email} — Phone: {phone}\nPublication director: [PENDING — name of the publication director]"
+      },
+      {
+        "title": "Hosting",
+        "text": "The site is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA — vercel.com. Content (database, media) is hosted on secured cloud infrastructure."
+      },
+      {
+        "title": "Intellectual property",
+        "text": "All site content (texts, visuals, logos, graphic elements) is the property of Tachfir or its partners and is protected by Moroccan law and international intellectual property conventions. Any unauthorized reproduction is prohibited. Third-party trademarks and logos (clients, vendors) remain the property of their respective owners."
+      },
+      {
+        "title": "Personal data",
+        "text": "The processing of personal data collected through this site is described in the Privacy policy, in accordance with Law No. 09-08 on the protection of individuals with regard to the processing of personal data and CNDP guidelines."
+      },
+      {
+        "title": "Applicable law",
+        "text": "This site and its legal notice are governed by Moroccan law. Any dispute falls under the jurisdiction of Moroccan courts."
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Privacy policy",
+    "updated": "Last updated:",
+    "intro": "Tachfir attaches particular importance to the protection of your personal data. This policy describes the data we collect through www.tachfir.com, how we use it and your rights, in accordance with Moroccan Law No. 09-08 and the guidelines of the CNDP (the Moroccan data protection authority).",
+    "sections": [
+      {
+        "title": "Data controller",
+        "text": "Tachfir, {address}, {city} — Email: {email}. The processing of data collected through this site is subject to the required formalities with the CNDP. [PENDING — CNDP receipt number]"
+      },
+      {
+        "title": "Data we collect",
+        "text": "Through our forms (quote, purchase order, contact): identity (name, role), contact details (email, phone), organization (company name, sector, ICE where applicable), the content of your request and attached files (purchase order, specifications). Through analytics: anonymized browsing data (if you accept it)."
+      },
+      {
+        "title": "Purposes and legal basis",
+        "text": "This data is used exclusively to: answer your quote and contact requests, prepare the commercial documents requested, and follow up on the business relationship. Legal basis: your consent (checkbox at submission) and pre-contractual measures taken at your request."
+      },
+      {
+        "title": "Recipients",
+        "text": "Your data is intended for Tachfir's sales and technical teams. It transits through our technical processors: site and database hosting (Vercel, Neon), email delivery (Resend). It is never sold, rented or transferred to third parties for commercial purposes."
+      },
+      {
+        "title": "Retention period",
+        "text": "Data related to a request is kept for as long as needed to process it, then for a maximum of 3 years after the last contact for business follow-up, unless a longer legal retention applies (contractual and accounting documents)."
+      },
+      {
+        "title": "Your rights",
+        "text": "In accordance with Law 09-08, you have the right to access, rectify and object to the processing of your data. To exercise it, write to {email} describing your request; we will answer as soon as possible. You may also contact the CNDP (www.cndp.ma)."
+      },
+      {
+        "title": "Cookies and analytics",
+        "text": "The site only uses technical cookies (theme and language preference) and, where enabled, Google Analytics 4 audience measurement. You can configure your browser to refuse non-essential cookies without affecting navigation."
+      },
+      {
+        "title": "Security",
+        "text": "Exchanges with the site are encrypted (HTTPS/TLS). Access to data is restricted, named and logged. Attached files are transmitted directly to the relevant team and are not publicly exposed."
+      }
+    ]
+  },
+  "forms": {
+    "quote": {
+      "title": "Your request",
+      "type": {
+        "label": "Request type",
+        "options": {
+          "developpement": "Web / mobile development",
+          "cybersecurite": "Cybersecurity (pentest, audit)",
+          "conseil": "IT consulting / nearshore",
+          "formation": "Training",
+          "fourniture": "Hardware supply"
+        }
+      },
+      "company": { "label": "Company / organization", "placeholder": "Your organization's name" },
+      "sector": {
+        "label": "Sector",
+        "options": { "public": "Public / administration", "prive": "Private" }
+      },
+      "ice": { "label": "ICE (optional)", "placeholder": "Company identifier (Morocco)" },
+      "name": { "label": "Full name", "placeholder": "Your full name" },
+      "role": { "label": "Role", "placeholder": "e.g. CIO, buyer, manager…" },
+      "email": { "label": "Work email", "placeholder": "you@organization.com" },
+      "phone": { "label": "Phone", "placeholder": "+212 6 XX XX XX XX" },
+      "description": {
+        "label": "Describe your need",
+        "placeholder": "Describe your project, order or need in a few lines…"
+      },
+      "budget": {
+        "label": "Estimated budget (MAD)",
+        "options": {
+          "lt50k": "Under 50,000",
+          "50to150k": "50,000 – 150,000",
+          "150to500k": "150,000 – 500,000",
+          "gt500k": "Over 500,000",
+          "nd": "To be defined together"
+        }
+      },
+      "deadline": {
+        "label": "Desired timeline",
+        "options": {
+          "urgent": "Urgent (< 1 month)",
+          "1to3": "1 to 3 months",
+          "3to6": "3 to 6 months",
+          "flexible": "Flexible"
+        }
+      },
+      "file": {
+        "label": "Attachment (PO, specifications…)",
+        "hint": "PDF or image, 10 MB max",
+        "remove": "Remove file"
+      },
+      "consent": "I agree that my data will be processed by Tachfir to answer my request, in accordance with Law 09-08. See the privacy policy.",
+      "submit": "Send my request",
+      "sending": "Sending…",
+      "success": {
+        "title": "Request received!",
+        "text": "Thank you for your trust. A Tachfir expert will reply within 24–48 working hours at the address provided."
+      },
+      "error": "Sending failed. Please try again, or write to us directly by email."
+    },
+    "contact": {
+      "name": { "label": "Full name", "placeholder": "Your full name" },
+      "email": { "label": "Email", "placeholder": "you@example.com" },
+      "phone": { "label": "Phone (optional)", "placeholder": "+212 6 XX XX XX XX" },
+      "message": { "label": "Message", "placeholder": "Your question or need…" },
+      "consent": "I agree that my data will be processed by Tachfir to answer my request, in accordance with Law 09-08.",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": {
+        "title": "Message sent!",
+        "text": "Thank you! We reply within 24–48 working hours."
+      },
+      "error": "Sending failed. Please try again, or write to us directly by email."
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Invalid email address",
+      "phone": "Invalid phone number",
+      "minMessage": "Please give a minimum of detail (10 characters)",
+      "fileSize": "File too large (10 MB max)",
+      "fileType": "Format not accepted (PDF or image only)",
+      "consent": "Your consent is required to process the request"
     }
   }
 }

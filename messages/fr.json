@@ -66,12 +66,1004 @@
     "services": "Nos services",
     "contact": "Nous contacter"
   },
+  "meta": {
+    "home": {
+      "title": "Société de services informatiques au Maroc (ESN)",
+      "description": "Développement web & mobile, cybersécurité, conseil IT nearshore, formation certifiante et fourniture de matériel informatique. Devis sous 24-48 h."
+    },
+    "services": {
+      "title": "Nos services IT : développement, cybersécurité, conseil",
+      "description": "4 pôles d'expertise + fourniture de matériel : développement web & mobile, cybersécurité, conseil IT & nearshore, formation. Un seul interlocuteur de confiance."
+    },
+    "serviceDev": {
+      "title": "Développement web et mobile au Maroc",
+      "description": "Applications web et mobiles sur mesure : React, Spring Boot, AWS/Azure, UX/UI Figma, méthode Scrum. Sécurité intégrée dès la conception. Devis sous 24-48 h."
+    },
+    "serviceCyber": {
+      "title": "Cybersécurité et test d'intrusion au Maroc",
+      "description": "Tests d'intrusion et audits de sécurité par des consultants certifiés : rapport actionnable, plan de remédiation, contre-test. Protégez vos systèmes maintenant."
+    },
+    "serviceConsulting": {
+      "title": "Conseil IT et nearshore Maroc",
+      "description": "Régie, AMOA, TMA : renforcez vos équipes avec des consultants certifiés. Nearshore Maroc-France : même fuseau, francophonie, coûts maîtrisés."
+    },
+    "serviceSupply": {
+      "title": "Fourniture de matériel informatique au Maroc",
+      "description": "PC, serveurs, réseau, licences : envoyez votre bon de commande ou appel d'offres, recevez un devis sous 24-48 h. Facturation conforme, garantie et SAV."
+    },
+    "formations": {
+      "title": "Formation informatique certifiante au Maroc",
+      "description": "Formations IT alignées sur des certifications reconnues : développement, cloud, DevOps, cybersécurité, agile, bureautique. Présentiel, distanciel ou intra."
+    },
+    "references": {
+      "title": "Références clients : 20+ entreprises nous font confiance",
+      "description": "Intelcia, Proxiad, Alten, SFR, Fuzyo… Découvrez les entreprises et administrations qui font confiance à Tachfir pour leurs projets IT."
+    },
+    "certifications": {
+      "title": "Certifications de nos consultants IT",
+      "description": "PSM, SAFe 5, Oracle Java, CCNA, CyberOps, CKAD, Terraform, OCI… 11 certifications qui prouvent l'expertise réelle de nos équipes."
+    },
+    "blog": {
+      "title": "Blog : marchés publics IT, nearshore, formation",
+      "description": "Guides pratiques pour DSI et acheteurs publics : bons de commande informatiques, externalisation nearshore au Maroc, certifications IT."
+    },
+    "devis": {
+      "title": "Demandez un devis ou envoyez votre bon de commande",
+      "description": "Développement, cybersécurité, conseil, formation ou fourniture de matériel : décrivez votre besoin, joignez votre BC ou CPS — réponse sous 24-48 h."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Une question, un projet, une commande ? Contactez Tachfir par formulaire, email, téléphone ou WhatsApp. Réponse sous 24-48 h."
+    },
+    "about": {
+      "title": "À propos : l'ESN marocaine qui chiffre la confiance",
+      "description": "Tachfir (تشفير = chiffrement) : une société marocaine de services IT dont la sécurité est l'ADN. 30+ experts certifiés au service de vos projets."
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "description": "Mentions légales du site tachfir.com : éditeur, hébergeur, propriété intellectuelle et droit applicable."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité (Loi 09-08)",
+      "description": "Comment Tachfir collecte, utilise et protège vos données personnelles, conformément à la loi marocaine 09-08 et aux exigences de la CNDP."
+    }
+  },
   "home": {
     "hero": {
+      "eyebrow": "Building Trust through Secure Tech",
       "title": "Société de services informatiques au Maroc — la sécurité au cœur de chaque projet",
-      "subtitle": "Développement web & mobile, cybersécurité, conseil IT, formation et fourniture de matériel — pour les administrations et entreprises au Maroc et en France.",
+      "subtitle": "Développement web & mobile, cybersécurité, conseil IT & nearshore, formation certifiante et fourniture de matériel informatique — pour les administrations, les entreprises marocaines et les sociétés françaises.",
       "ctaQuote": "Demander un devis",
       "ctaServices": "Découvrir nos services"
+    },
+    "stats": {
+      "clients": "clients accompagnés",
+      "projects": "projets livrés",
+      "experts": "experts certifiés"
+    },
+    "clients": {
+      "title": "Ils nous font confiance"
+    },
+    "poles": {
+      "eyebrow": "Nos expertises",
+      "title": "Quatre pôles, une même exigence : la sécurité",
+      "intro": "De la conception d'applications à la montée en compétences de vos équipes, chaque prestation est pensée pour durer — et pour résister.",
+      "dev": {
+        "title": "Développement web & mobile",
+        "text": "Applications web, mobiles et UX/UI sur mesure. React, Spring Boot, AWS, Azure, Figma — livrées en sprints Scrum, sécurisées dès la conception."
+      },
+      "cyber": {
+        "title": "Cybersécurité",
+        "text": "Tests d'intrusion et audits de sécurité menés par des consultants certifiés. Rapport clair, plan de remédiation, contre-test inclus."
+      },
+      "consulting": {
+        "title": "Conseil IT & nearshore",
+        "text": "Régie, AMOA, TMA : des profils certifiés qui renforcent vos équipes au Maroc comme en France, avec un pilotage transparent."
+      },
+      "formation": {
+        "title": "Formation",
+        "text": "Formations IT certifiantes animées par des praticiens : développement, cloud, DevOps, cybersécurité, agile, bureautique."
+      },
+      "more": "Voir le détail"
+    },
+    "certifications": {
+      "eyebrow": "Expertise prouvée",
+      "title": "Des consultants certifiés, pas des promesses",
+      "text": "PSM, SAFe 5, Oracle Java, CCNA, Cisco CyberOps, CKAD, Terraform, Oracle Cloud… nos certifications sont celles que vos projets exigent.",
+      "cta": "Voir les 11 certifications"
+    },
+    "testimonials": {
+      "eyebrow": "Témoignages",
+      "title": "Ce que disent nos clients"
+    },
+    "formations": {
+      "eyebrow": "Montée en compétences",
+      "title": "Formations IT certifiantes",
+      "intro": "Développez les compétences de vos équipes avec des formations animées par des consultants certifiés.",
+      "cta": "Tout le catalogue"
+    },
+    "supply": {
+      "eyebrow": "Fourniture informatique",
+      "title": "Matériel informatique sur bon de commande",
+      "text": "Pas de catalogue en ligne : chaque demande est traitée sur mesure. Administrations et entreprises, envoyez votre besoin ou votre bon de commande — vous recevez un devis (عرض أثمان) sous 24-48 h.",
+      "cta": "Envoyer un bon de commande",
+      "ctaSecondary": "Comment ça marche"
+    },
+    "posts": {
+      "eyebrow": "Blog",
+      "title": "Derniers articles",
+      "cta": "Tous les articles"
+    },
+    "finalCta": {
+      "title": "Un projet, une mission, une commande ?",
+      "text": "Décrivez votre besoin en 2 minutes : un expert vous répond avec un devis ou un plan d'action concret.",
+      "cta": "Demander un devis",
+      "ctaAlt": "Nous écrire"
+    }
+  },
+  "servicesHub": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Un partenaire IT unique, cinq façons de vous servir",
+      "intro": "Quatre pôles d'expertise et une activité de fourniture de matériel : Tachfir couvre le cycle complet de vos besoins informatiques, avec la sécurité comme fil conducteur."
+    },
+    "cards": {
+      "dev": {
+        "title": "Développement web & mobile",
+        "text": "Sites, plateformes métier et applications mobiles sur mesure, conçus avec une UX soignée et livrés en cycles courts."
+      },
+      "cyber": {
+        "title": "Cybersécurité",
+        "text": "Tests d'intrusion, audits de sécurité et accompagnement à la remédiation pour protéger vos actifs numériques."
+      },
+      "consulting": {
+        "title": "Conseil IT & nearshore",
+        "text": "Régie, AMOA et TMA au Maroc et pour la France : les bons profils, au bon moment, au bon coût."
+      },
+      "formation": {
+        "title": "Formation certifiante",
+        "text": "Un catalogue de formations IT alignées sur les certifications que détiennent nos propres consultants."
+      },
+      "supply": {
+        "title": "Fourniture de matériel informatique",
+        "text": "Postes, serveurs, réseau, licences : réponse aux bons de commande et appels d'offres, sans catalogue en ligne — du sur-mesure uniquement.",
+        "badge": "Sur bon de commande"
+      }
+    },
+    "nearshore": {
+      "eyebrow": "Maroc ↔ France",
+      "title": "Le nearshore qui parle votre langue",
+      "text": "Entreprises françaises : externalisez vos développements au Maroc sans les frictions de l'offshore lointain. Fuseau horaire quasi identique, équipes francophones, coûts optimisés et cadre contractuel clair.",
+      "cta": "Découvrir l'offre nearshore"
+    }
+  },
+  "serviceDev": {
+    "hero": {
+      "eyebrow": "Développement web & mobile",
+      "title": "Développement web et mobile au Maroc, sécurisé dès la conception",
+      "intro": "Nous concevons et développons vos sites, plateformes métier et applications mobiles avec une exigence double : une expérience utilisateur irréprochable et une sécurité intégrée à chaque ligne de code.",
+      "cta": "Chiffrer mon projet"
+    },
+    "problem": {
+      "title": "Votre enjeu",
+      "text": "Un logiciel réussi n'est pas seulement fonctionnel : il doit être rapide, maintenable, évolutif — et sûr. Trop de projets échouent sur une dette technique invisible, des délais qui dérivent ou des failles découvertes trop tard. Notre réponse : des cycles courts, des choix technologiques éprouvés et des revues de sécurité systématiques."
+    },
+    "approach": {
+      "title": "Notre démarche",
+      "steps": [
+        {
+          "title": "Cadrage & ateliers",
+          "text": "Compréhension métier, périmètre, user stories priorisées et estimation transparente."
+        },
+        {
+          "title": "UX/UI & prototypage",
+          "text": "Maquettes Figma testées avec vos utilisateurs avant d'écrire la moindre ligne de code."
+        },
+        {
+          "title": "Développement itératif",
+          "text": "Sprints Scrum de 2 semaines, démos régulières, intégration continue et revues de code croisées."
+        },
+        {
+          "title": "Qualité & sécurité",
+          "text": "Tests automatisés, contrôles OWASP, revue de sécurité avant chaque mise en production."
+        },
+        {
+          "title": "Mise en production & TMA",
+          "text": "Déploiement, supervision, maintenance corrective et évolutive avec engagements de service."
+        }
+      ]
+    },
+    "stack": {
+      "title": "Notre stack",
+      "items": ["React / Next.js", "Spring Boot / Java", "AWS & Azure", "Figma (UX/UI)", "Scrum / SAFe", "CI/CD & conteneurs"]
+    },
+    "deliverables": {
+      "title": "Ce que vous recevez",
+      "items": [
+        "Backlog priorisé et chiffré",
+        "Maquettes et design system Figma",
+        "Code source documenté (vous en êtes propriétaire)",
+        "Environnements de recette et de production",
+        "Tests automatisés et rapport de couverture",
+        "Documentation d'exploitation et formation à la prise en main"
+      ]
+    },
+    "why": {
+      "title": "Pourquoi Tachfir",
+      "points": [
+        {
+          "title": "Certifiés là où ça compte",
+          "text": "Oracle Java, Scrum PSM, SAFe, cloud AWS/Azure/OCI : des certifications détenues par les développeurs qui travaillent réellement sur votre projet."
+        },
+        {
+          "title": "La sécurité en ADN",
+          "text": "Tachfir signifie « chiffrement ». Chaque application est revue par notre pôle cybersécurité avant la mise en production."
+        },
+        {
+          "title": "Proximité et réactivité",
+          "text": "Un interlocuteur unique, des réponses sous 24-48 h, au Maroc comme pour vos équipes en France."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Quels types de projets développez-vous ?",
+          "a": "Sites institutionnels et e-services, plateformes web métier (gestion, portails, tableaux de bord), applications mobiles iOS/Android, refontes d'applications existantes et intégrations d'API. Nous intervenons aussi bien pour des administrations que pour des PME et des ETI."
+        },
+        {
+          "q": "Quelles technologies utilisez-vous ?",
+          "a": "Principalement React/Next.js côté front, Spring Boot (Java) côté back, hébergement AWS ou Azure, design Figma. Le choix final dépend de votre contexte : nous privilégions toujours la maintenabilité et la disponibilité des compétences sur le marché."
+        },
+        {
+          "q": "Comment se déroule un projet type ?",
+          "a": "Un cadrage d'une à deux semaines, puis des sprints de développement de deux semaines avec démo à chaque itération. Vous voyez le produit avancer en continu et pouvez réajuster les priorités à chaque sprint."
+        },
+        {
+          "q": "Combien coûte un développement sur mesure ?",
+          "a": "Cela dépend du périmètre. Après un premier échange, nous vous remettons sous 24-48 h une estimation par fourchettes, puis un devis détaillé après cadrage. Pas de coûts cachés : tout est écrit."
+        },
+        {
+          "q": "Assurez-vous la maintenance après la mise en ligne ?",
+          "a": "Oui. Nos contrats de TMA (tierce maintenance applicative) couvrent le correctif, l'évolutif et la supervision, avec des engagements de délais d'intervention adaptés à la criticité de votre application."
+        },
+        {
+          "q": "Comment la sécurité est-elle prise en compte ?",
+          "a": "Revues de code systématiques, bonnes pratiques OWASP, gestion des secrets, chiffrement des données sensibles et test d'intrusion interne avant mise en production pour les applications critiques. C'est notre marque de fabrique."
+        }
+      ]
+    },
+    "related": {
+      "title": "Pour aller plus loin",
+      "quote": "Chiffrer mon projet",
+      "formation": "Formation full-stack React & Spring Boot",
+      "article": "Lire : nearshore au Maroc pour les entreprises françaises"
+    }
+  },
+  "serviceCyber": {
+    "hero": {
+      "eyebrow": "Cybersécurité",
+      "title": "Cybersécurité et test d'intrusion au Maroc : éprouvez vos défenses",
+      "intro": "Tests d'intrusion, audits de sécurité et accompagnement à la remédiation, menés par des consultants certifiés. Découvrez vos vulnérabilités avant que d'autres ne le fassent.",
+      "cta": "Planifier un audit"
+    },
+    "problem": {
+      "title": "Votre enjeu",
+      "text": "Les attaques ne préviennent pas : rançongiciels, fuites de données, détournements de comptes. Pour une administration ou une entreprise, l'enjeu n'est plus de savoir si l'on sera visé, mais quand — et dans quel état de préparation. Un test d'intrusion régulier transforme cette incertitude en plan d'action concret."
+    },
+    "approach": {
+      "title": "Notre démarche",
+      "steps": [
+        {
+          "title": "Cadrage & règles d'engagement",
+          "text": "Périmètre, scénarios (boîte noire, grise, blanche), fenêtres d'intervention et autorisations écrites."
+        },
+        {
+          "title": "Reconnaissance & cartographie",
+          "text": "Inventaire de la surface d'attaque : services exposés, applications, configurations, comptes."
+        },
+        {
+          "title": "Exploitation contrôlée",
+          "text": "Tentatives d'intrusion réelles mais maîtrisées, sans perturber la production, preuves à l'appui."
+        },
+        {
+          "title": "Rapport & plan de remédiation",
+          "text": "Synthèse pour la direction, détail technique pour vos équipes, priorisation par risque réel."
+        },
+        {
+          "title": "Contre-test",
+          "text": "Vérification après correction : les failles identifiées sont bien fermées, rapport final à l'appui."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "Vos livrables",
+      "items": [
+        "Rapport exécutif lisible par un comité de direction",
+        "Rapport technique détaillé avec preuves d'exploitation",
+        "Plan de remédiation priorisé par criticité",
+        "Restitution orale avec vos équipes",
+        "Contre-test de vérification inclus",
+        "Attestation de test (utilisable pour vos clients et appels d'offres)"
+      ]
+    },
+    "why": {
+      "title": "Pourquoi Tachfir",
+      "points": [
+        {
+          "title": "Des certifications de terrain",
+          "text": "Cisco CyberOps Associate, CCNA Security — nos consultants comprennent l'infrastructure qu'ils testent, pas seulement les outils d'attaque."
+        },
+        {
+          "title": "Des rapports actionnables",
+          "text": "Pas de listing automatique de scanner : chaque vulnérabilité est vérifiée, contextualisée et accompagnée d'une correction concrète."
+        },
+        {
+          "title": "Confidentialité contractuelle",
+          "text": "NDA systématique, données traitées au Maroc, conformité Loi 09-08. Vos résultats de test ne quittent jamais le cercle convenu."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Quelle différence entre un test d'intrusion et un audit de sécurité ?",
+          "a": "L'audit évalue votre posture globale (configurations, politiques, architecture) par analyse documentaire et technique. Le test d'intrusion (pentest) simule une attaque réelle pour prouver ce qu'un attaquant pourrait effectivement obtenir. Les deux se complètent."
+        },
+        {
+          "q": "À quelle fréquence faut-il tester ?",
+          "a": "Au minimum une fois par an, et après chaque évolution majeure (nouvelle application, refonte d'infrastructure, ouverture d'un service au public). Les organismes manipulant des données sensibles testent généralement chaque semestre."
+        },
+        {
+          "q": "Le test peut-il perturber notre production ?",
+          "a": "Non. Les règles d'engagement définissent les fenêtres d'intervention, les systèmes exclus et les techniques interdites. Les tests destructifs ne sont jamais exécutés sans accord explicite et environnement dédié."
+        },
+        {
+          "q": "Que contient le rapport ?",
+          "a": "Une synthèse exécutive (niveau de risque global, tendances), le détail de chaque vulnérabilité avec preuve d'exploitation, sa criticité contextualisée et des recommandations de correction concrètes. Un contre-test vérifie ensuite les corrections."
+        },
+        {
+          "q": "Travaillez-vous avec le secteur public ?",
+          "a": "Oui. Nous répondons aux bons de commande et appels d'offres des administrations et établissements publics, avec facturation conforme (ICE, RC) et clauses de confidentialité renforcées."
+        },
+        {
+          "q": "Suivez-vous des méthodologies reconnues ?",
+          "a": "Nos tests s'appuient sur les référentiels OWASP (web et mobile) et les bonnes pratiques PTES, adaptés à votre contexte. Chaque mission est documentée et reproductible."
+        }
+      ]
+    },
+    "related": {
+      "title": "Pour aller plus loin",
+      "quote": "Planifier un audit",
+      "formation": "Formation cybersécurité opérationnelle",
+      "article": "Lire : les certifications IT les plus demandées au Maroc"
+    }
+  },
+  "serviceConsulting": {
+    "hero": {
+      "eyebrow": "Conseil IT & nearshore",
+      "title": "Conseil IT et nearshore : les bons profils, au Maroc et pour la France",
+      "intro": "Régie, AMOA, TMA : nous renforçons vos équipes avec des consultants certifiés, au Maroc ou à distance pour vos projets en France. Sans lourdeur, avec un pilotage transparent.",
+      "cta": "Trouver un profil"
+    },
+    "problem": {
+      "title": "Votre enjeu",
+      "text": "Recruter un bon développeur ou un chef de projet expérimenté prend des mois — et vos projets n'attendent pas. Pour les entreprises françaises, s'ajoute l'équation du coût : les talents existent, mais pas toujours au bon tarif. Le nearshore marocain répond aux deux : des compétences certifiées, disponibles rapidement, dans votre fuseau horaire et votre langue."
+    },
+    "approach": {
+      "title": "Notre démarche",
+      "steps": [
+        {
+          "title": "Qualification du besoin",
+          "text": "Compétences, séniorité, contexte projet, durée : nous cadrons précisément avant de proposer."
+        },
+        {
+          "title": "Profils présélectionnés",
+          "text": "CV qualifiés et entretiens techniques organisés rapidement — vous validez, nous engageons."
+        },
+        {
+          "title": "Intégration encadrée",
+          "text": "Onboarding structuré, environnement sécurisé, points quotidiens les premières semaines."
+        },
+        {
+          "title": "Pilotage & reporting",
+          "text": "Compte rendu d'activité régulier, indicateurs convenus, point mensuel de gouvernance."
+        },
+        {
+          "title": "Montée en charge maîtrisée",
+          "text": "Extension d'équipe, transfert de compétences ou réversibilité : tout est contractualisé."
+        }
+      ]
+    },
+    "nearshoreArgs": {
+      "title": "Nearshore Maroc : l'équation gagnante pour la France",
+      "items": [
+        {
+          "title": "Fuseau horaire aligné",
+          "text": "0 à 1 h d'écart avec Paris : vos équipes travaillent en temps réel, pas en décalé."
+        },
+        {
+          "title": "Francophonie native",
+          "text": "Réunions, documentation, code reviews : tout se passe en français, sans friction."
+        },
+        {
+          "title": "Coûts optimisés",
+          "text": "Des tarifs sensiblement inférieurs aux prestations équivalentes en France, à compétences certifiées égales."
+        },
+        {
+          "title": "Cadre clair",
+          "text": "Contrats de droit adapté, clauses RGPD, confidentialité et propriété intellectuelle verrouillées."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "Nos modes d'intervention",
+      "items": [
+        "Régie : un ou plusieurs consultants intégrés à vos équipes",
+        "AMOA : cadrage, expression de besoin, pilotage de projet",
+        "TMA : maintenance applicative avec engagements de service",
+        "Équipe dédiée nearshore pilotée par Tachfir",
+        "Audit et schéma directeur SI",
+        "Transfert de compétences et accompagnement au changement"
+      ]
+    },
+    "why": {
+      "title": "Pourquoi Tachfir",
+      "points": [
+        {
+          "title": "Des consultants certifiés",
+          "text": "PSM, SAFe, Java, cloud, Kubernetes : les certifications de nos équipes sont vérifiables — et vérifiées par nos clients ESN les plus exigeants."
+        },
+        {
+          "title": "Habitués aux ESN et grands comptes",
+          "text": "Intelcia, Proxiad, Alten, SFR : nous connaissons les exigences de qualité et de reporting des grandes organisations."
+        },
+        {
+          "title": "Engagement dans la durée",
+          "text": "Suivi de mission réel, remplacement encadré si besoin, et un objectif : que chaque consultant apporte plus que sa fiche de poste."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Quelle différence entre régie et forfait ?",
+          "a": "En régie, vous pilotez le consultant intégré à vos équipes et payez le temps passé. Au forfait, nous nous engageons sur un résultat, un délai et un prix. La TMA combine souvent les deux : un socle forfaitaire et des unités d'œuvre."
+        },
+        {
+          "q": "Pourquoi choisir le nearshore au Maroc plutôt que l'offshore lointain ?",
+          "a": "Même fuseau horaire que Paris (0 à 1 h d'écart), français courant, allers-retours faciles (3 h de vol), culture de travail proche et cadre juridique éprouvé par des centaines d'entreprises françaises déjà installées. Vous gardez la réactivité d'une équipe locale, au coût du nearshore."
+        },
+        {
+          "q": "Sous quel délai un consultant peut-il démarrer ?",
+          "a": "Pour les compétences courantes (développement Java/React, DevOps, QA), nous présentons généralement des profils sous une à deux semaines. Le démarrage effectif dépend de vos processus de validation et des accès à provisionner."
+        },
+        {
+          "q": "Comment gérez-vous la protection des données (RGPD / Loi 09-08) ?",
+          "a": "Clauses contractuelles types pour les transferts, accès nominatifs et journalisés, environnements cloisonnés, sensibilisation des consultants. Le Maroc dispose de son propre cadre (Loi 09-08, CNDP) que nous appliquons nativement."
+        },
+        {
+          "q": "Quels types de profils proposez-vous ?",
+          "a": "Développeurs front/back/full-stack, DevOps et cloud (AWS, Azure, OCI, Kubernetes), consultants cybersécurité, QA, Scrum Masters et chefs de projet certifiés PSM/SAFe, business analysts AMOA."
+        },
+        {
+          "q": "Peut-on commencer petit avant d'étendre ?",
+          "a": "C'est même recommandé : beaucoup de nos clients démarrent avec un consultant ou un petit périmètre TMA, puis étendent l'équipe une fois la confiance et les processus installés."
+        }
+      ]
+    },
+    "related": {
+      "title": "Pour aller plus loin",
+      "quote": "Décrire mon besoin",
+      "formation": "Formation gestion de projet agile Scrum & SAFe",
+      "article": "Lire : nearshore au Maroc, pourquoi les entreprises françaises externalisent"
+    }
+  },
+  "serviceSupply": {
+    "hero": {
+      "eyebrow": "Fourniture de matériel informatique",
+      "title": "Fourniture de matériel informatique au Maroc, sur bon de commande",
+      "intro": "Pas de catalogue en ligne : chaque demande est traitée sur mesure. Envoyez votre besoin, votre bon de commande ou votre appel d'offres — vous recevez un devis (عرض أثمان) sous 24-48 h.",
+      "cta": "Envoyer votre bon de commande",
+      "ctaWhatsApp": "Discuter sur WhatsApp"
+    },
+    "families": {
+      "title": "Familles de matériel couvertes",
+      "intro": "Nous fournissons les administrations publiques et les entreprises marocaines sur l'ensemble du spectre informatique :",
+      "items": [
+        {
+          "title": "Postes de travail & portables",
+          "text": "PC fixes, laptops professionnels, stations de travail, écrans et accessoires."
+        },
+        {
+          "title": "Serveurs & stockage",
+          "text": "Serveurs rack et tour, NAS/SAN, sauvegarde, onduleurs."
+        },
+        {
+          "title": "Réseau & sécurité",
+          "text": "Switches, routeurs, points d'accès Wi-Fi, pare-feu, contrôle d'accès."
+        },
+        {
+          "title": "Impression & numérisation",
+          "text": "Imprimantes, multifonctions, scanners de production, consommables."
+        },
+        {
+          "title": "Licences logicielles",
+          "text": "Systèmes, bureautique, sécurité, virtualisation — en licences perpétuelles ou abonnements."
+        },
+        {
+          "title": "Consommables & accessoires",
+          "text": "Toners, câblage, périphériques, petite connectique et pièces détachées."
+        }
+      ]
+    },
+    "publicSector": {
+      "eyebrow": "Secteur public & entreprises",
+      "title": "Pensé pour les acheteurs publics",
+      "items": [
+        "Réponse aux bons de commande (سند الطلب) et appels d'offres (طلب عروض)",
+        "Facturation conforme : ICE, RC, références du marché",
+        "Délais de livraison engagés par écrit",
+        "Garantie constructeur et extension possible",
+        "SAV et remplacement encadrés",
+        "Livraison : {zones}"
+      ]
+    },
+    "process": {
+      "title": "Comment ça marche",
+      "steps": [
+        {
+          "title": "Votre demande",
+          "text": "Envoyez votre besoin, BC ou CPS via le formulaire, par email ou WhatsApp."
+        },
+        {
+          "title": "Devis sous 24-48 h",
+          "text": "Vous recevez un عرض أثمان détaillé : références, prix, délais, garantie."
+        },
+        {
+          "title": "Validation",
+          "text": "Bon de commande ou notification de marché — nous lançons l'approvisionnement."
+        },
+        {
+          "title": "Livraison & installation",
+          "text": "Livraison sur site, installation et mise en service si demandée, PV de réception."
+        },
+        {
+          "title": "Facturation & SAV",
+          "text": "Facture conforme à votre circuit (ICE, RC), garantie et support assurés."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Pourquoi n'y a-t-il pas de catalogue en ligne ?",
+          "a": "Parce que les prix et disponibilités du matériel informatique évoluent en permanence, et que chaque organisation a des contraintes propres (compatibilité, garantie, budget). Un devis sur mesure sous 24-48 h est plus fiable qu'un catalogue obsolète."
+        },
+        {
+          "q": "Qui peut commander chez Tachfir ?",
+          "a": "Les administrations et établissements publics (sur bon de commande ou marché), les entreprises privées et les associations. Nous fournissons les documents administratifs requis pour chaque circuit d'achat."
+        },
+        {
+          "q": "Quels sont vos délais ?",
+          "a": "Le devis est envoyé sous 24-48 h ouvrées. Les délais de livraison dépendent des références et sont indiqués — et engagés — dans le devis."
+        },
+        {
+          "q": "Comment sont gérés la garantie et le SAV ?",
+          "a": "Tout matériel est couvert par la garantie constructeur, avec possibilité d'extension. En cas de panne, nous prenons en charge le diagnostic et le circuit de remplacement ou de réparation."
+        },
+        {
+          "q": "Répondez-vous aux appels d'offres ?",
+          "a": "Oui. Nous préparons des dossiers complets (administratif, technique, financier) et respectons les exigences des marchés publics marocains : références, ICE, RC, attestations."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Un besoin en matériel ? Chiffrons-le.",
+      "text": "Joignez votre bon de commande, CPS ou simple liste de besoins : un devis détaillé vous revient sous 24-48 h.",
+      "button": "Envoyer ma demande"
+    }
+  },
+  "formationsPage": {
+    "hero": {
+      "eyebrow": "Formation",
+      "title": "Formation informatique certifiante au Maroc",
+      "intro": "Des formations conçues et animées par des consultants certifiés, alignées sur les certifications que le marché demande : développement, cloud, DevOps, cybersécurité, agile et bureautique."
+    },
+    "filters": {
+      "all": "Toutes",
+      "label": "Filtrer par catégorie"
+    },
+    "categories": {
+      "developpement": "Développement",
+      "cloud": "Cloud",
+      "devops": "DevOps",
+      "cybersecurite": "Cybersécurité",
+      "agile": "Agile",
+      "bureautique": "Bureautique"
+    },
+    "card": {
+      "duration": "Durée",
+      "modalities": "Modalités",
+      "details": "Voir la fiche"
+    },
+    "modalities": {
+      "presentiel": "Présentiel",
+      "distanciel": "Distanciel",
+      "intra": "Intra-entreprise"
+    },
+    "empty": "Le catalogue est en cours de mise à jour. Contactez-nous pour connaître les prochaines sessions.",
+    "detail": {
+      "objectives": "Objectifs pédagogiques",
+      "program": "Programme",
+      "audience": "Public visé",
+      "prerequisites": "Prérequis",
+      "duration": "Durée",
+      "modalities": "Modalités",
+      "cta": "Demander un devis formation",
+      "ctaIntra": "Cette formation existe aussi en intra-entreprise, adaptée à votre contexte.",
+      "backToCatalog": "Retour au catalogue"
+    },
+    "why": {
+      "title": "Pourquoi se former avec Tachfir",
+      "points": [
+        {
+          "title": "Des formateurs praticiens",
+          "text": "Nos formateurs sont les consultants qui livrent nos projets : ils enseignent ce qu'ils pratiquent."
+        },
+        {
+          "title": "Alignées certifications",
+          "text": "Chaque parcours prépare aux certifications reconnues du domaine (PSM, CKAD, Terraform, OCI…)."
+        },
+        {
+          "title": "Sur mesure possible",
+          "text": "Présentiel, distanciel ou intra-entreprise : le format s'adapte à vos équipes et vos contraintes."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Un besoin de formation pour votre équipe ?",
+      "text": "Décrivez votre contexte : nous construisons le parcours adapté, avec devis sous 24-48 h.",
+      "button": "Demander un devis formation"
+    }
+  },
+  "referencesPage": {
+    "hero": {
+      "eyebrow": "Références",
+      "title": "Ils construisent avec nous",
+      "intro": "ESN internationales, opérateurs télécoms, administrations et PME : plus de 20 organisations font confiance à Tachfir pour développer, sécuriser et faire fonctionner leur informatique."
+    },
+    "logos": {
+      "title": "Nos références clients"
+    },
+    "stats": {
+      "title": "Tachfir en chiffres",
+      "clients": "clients accompagnés",
+      "projects": "projets livrés",
+      "experts": "experts certifiés"
+    },
+    "sectors": {
+      "title": "Secteurs servis",
+      "items": [
+        "ESN & conseil IT",
+        "Télécoms & opérateurs",
+        "Relation client & BPO",
+        "Secteur public & administrations",
+        "Services financiers",
+        "PME & ETI en croissance"
+      ]
+    },
+    "testimonials": {
+      "title": "Paroles de clients"
+    },
+    "cta": {
+      "title": "Et si la prochaine référence, c'était vous ?",
+      "button": "Parler de votre projet"
+    }
+  },
+  "certificationsPage": {
+    "hero": {
+      "eyebrow": "Certifications",
+      "title": "L'expertise, preuves à l'appui",
+      "intro": "Chez Tachfir, les certifications ne sont pas un argument marketing : elles sont détenues par les consultants qui travaillent sur vos projets. En voici la liste exacte."
+    },
+    "groups": {
+      "agile": {
+        "title": "Agilité & pilotage",
+        "items": ["Professional Scrum Master (PSM)", "Certified SAFe® 5"]
+      },
+      "dev": {
+        "title": "Développement",
+        "items": ["Oracle Certified Professional Java", "Oracle Certified Expert Java EE"]
+      },
+      "network": {
+        "title": "Réseaux & cybersécurité",
+        "items": ["CCNA Switching / Routing / Wireless", "Cisco CyberOps Associate"]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "items": [
+          "CKAD — Certified Kubernetes Application Developer",
+          "HashiCorp Terraform Associate (003)",
+          "Oracle Cloud Infrastructure Certified",
+          "OCI AI Certified",
+          "OCI Generative AI Certified"
+        ]
+      }
+    },
+    "why": {
+      "title": "Ce que cela change pour vous",
+      "points": [
+        {
+          "title": "Moins de risque",
+          "text": "Des pratiques standardisées et vérifiées par des organismes indépendants, pas des affirmations."
+        },
+        {
+          "title": "Meilleure vélocité",
+          "text": "Un consultant certifié applique des patterns éprouvés au lieu de réinventer — vous gagnez des semaines."
+        },
+        {
+          "title": "Transmission",
+          "text": "Ces mêmes certifications structurent notre catalogue de formations : vos équipes en profitent aussi."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Besoin de ces compétences sur votre projet ?",
+      "buttonConsulting": "Renforcer mon équipe",
+      "buttonFormations": "Former mes équipes"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Guides et repères pour vos décisions IT",
+      "intro": "Marchés publics, nearshore, certifications, sécurité : des articles concrets, écrits pour les DSI, les acheteurs publics et les décideurs."
+    },
+    "empty": "Les premiers articles arrivent très vite. Revenez bientôt !",
+    "publishedOn": "Publié le",
+    "by": "par",
+    "backToBlog": "Retour au blog",
+    "share": "Partager",
+    "related": {
+      "title": "Sur le même sujet",
+      "service": "Service lié",
+      "cta": "Demander un devis"
+    },
+    "categories": {
+      "marches-publics": "Marchés publics",
+      "nearshore": "Nearshore",
+      "formation": "Formation",
+      "cybersecurite": "Cybersécurité",
+      "guides": "Guides",
+      "actualites": "Actualités"
+    }
+  },
+  "devisPage": {
+    "hero": {
+      "eyebrow": "Devis & bon de commande",
+      "title": "Décrivez votre besoin, recevez une réponse concrète",
+      "intro": "Développement, cybersécurité, conseil, formation ou fourniture de matériel : remplissez le formulaire, joignez votre bon de commande ou cahier des charges si vous en avez un — un expert vous répond sous 24-48 h."
+    },
+    "aside": {
+      "title": "Ce qui se passe ensuite",
+      "steps": [
+        "Votre demande arrive directement à l'équipe concernée",
+        "Un expert vous rappelle ou vous écrit sous 24-48 h",
+        "Vous recevez un devis détaillé ou une proposition de rendez-vous",
+        "Aucun engagement tant que vous n'avez pas signé"
+      ],
+      "confidential": "Vos informations restent confidentielles et ne sont jamais partagées avec des tiers (Loi 09-08)."
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Parlons de votre projet",
+      "intro": "Une question, un besoin, une commande ? Écrivez-nous : nous répondons sous 24-48 h ouvrées."
+    },
+    "info": {
+      "title": "Nos coordonnées",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "mapPending": "[EN_ATTENTE — carte à intégrer une fois l'adresse confirmée]"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "Tachfir : la confiance, chiffrée",
+      "intro": "« Tachfir » (تشفير) signifie chiffrement en arabe. Ce nom n'est pas un hasard : la sécurité est notre ADN, depuis le premier jour."
+    },
+    "story": {
+      "title": "Notre histoire",
+      "text1": "Tachfir est née au Maroc d'un constat simple : les organisations n'ont pas besoin de plus de prestataires informatiques, elles ont besoin de prestataires de confiance. Des équipes qui livrent ce qu'elles promettent, sécurisent ce qu'elles construisent et transmettent ce qu'elles savent.",
+      "text2": "Aujourd'hui, plus de 30 experts certifiés accompagnent des ESN internationales, des opérateurs, des administrations et des PME — au Maroc comme en France — sur quatre métiers : le développement, la cybersécurité, le conseil et la formation, complétés par la fourniture de matériel informatique."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "items": [
+        {
+          "title": "Confiance",
+          "text": "Elle se gagne par les actes : engagements écrits, transparence sur les coûts et les délais, code dont vous êtes propriétaire."
+        },
+        {
+          "title": "Sécurité",
+          "text": "Notre nom l'annonce : chaque livrable passe par le filtre de la sécurité, quel que soit le pôle qui le produit."
+        },
+        {
+          "title": "Exigence",
+          "text": "Certifications maintenues à jour, revues croisées, amélioration continue : le niveau ne se négocie pas."
+        },
+        {
+          "title": "Transmission",
+          "text": "Nous formons nos clients à ce que nous pratiquons — une entreprise qui apprend est une entreprise plus forte."
+        }
+      ]
+    },
+    "team": {
+      "title": "L'équipe",
+      "text": "Développeurs, pentesters, consultants cloud et DevOps, formateurs : une équipe de 30+ experts, aux certifications vérifiables, pilotée par des ingénieurs qui codent encore.",
+      "note": "[EN_ATTENTE — photos et bios de l'équipe à fournir]"
+    },
+    "cta": {
+      "title": "Travaillons ensemble",
+      "button": "Nous contacter"
+    }
+  },
+  "legalPage": {
+    "title": "Mentions légales",
+    "updated": "Dernière mise à jour :",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "text": "Le site www.tachfir.com est édité par Tachfir, société de droit marocain.\nAdresse : {address}, {city}\nICE : {ice} — RC : {rc}\nEmail : {email} — Téléphone : {phone}\nDirecteur de la publication : [EN_ATTENTE — nom du directeur de publication]"
+      },
+      {
+        "title": "Hébergement",
+        "text": "Le site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis — vercel.com. Les contenus (base de données, médias) sont hébergés sur des infrastructures cloud sécurisées."
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "text": "L'ensemble des contenus du site (textes, visuels, logos, éléments graphiques) est la propriété de Tachfir ou de ses partenaires et est protégé par le droit marocain et les conventions internationales relatives à la propriété intellectuelle. Toute reproduction non autorisée est interdite. Les marques et logos de tiers (clients, éditeurs) demeurent la propriété de leurs détenteurs respectifs."
+      },
+      {
+        "title": "Données personnelles",
+        "text": "Le traitement des données personnelles collectées via ce site est décrit dans la Politique de confidentialité, conformément à la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et aux directives de la CNDP."
+      },
+      {
+        "title": "Droit applicable",
+        "text": "Le présent site et ses mentions légales sont soumis au droit marocain. Tout litige relève de la compétence des tribunaux marocains."
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour :",
+    "intro": "Tachfir accorde une importance particulière à la protection de vos données personnelles. La présente politique décrit les données que nous collectons via le site www.tachfir.com, l'usage que nous en faisons et vos droits, conformément à la loi marocaine n° 09-08 et aux directives de la CNDP (Commission Nationale de contrôle de la protection des Données à caractère Personnel).",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "text": "Tachfir, {address}, {city} — Email : {email}. Le traitement des données collectées via ce site fait l'objet des formalités requises auprès de la CNDP. [EN_ATTENTE — numéro de récépissé CNDP]"
+      },
+      {
+        "title": "Données collectées",
+        "text": "Via nos formulaires (devis, bon de commande, contact) : identité (nom, fonction), coordonnées (email, téléphone), organisation (raison sociale, secteur, ICE le cas échéant), contenu de votre demande et fichiers joints (bon de commande, cahier des charges). Via la mesure d'audience : données de navigation anonymisées (si vous l'acceptez)."
+      },
+      {
+        "title": "Finalités et base légale",
+        "text": "Ces données servent exclusivement à : répondre à vos demandes de devis et de contact, établir les documents commerciaux demandés, assurer le suivi de la relation commerciale. Base légale : votre consentement (case à cocher au moment de l'envoi) et les mesures précontractuelles à votre demande."
+      },
+      {
+        "title": "Destinataires",
+        "text": "Vos données sont destinées aux équipes commerciales et techniques de Tachfir. Elles transitent par nos sous-traitants techniques : hébergement du site et de la base de données (Vercel, Neon), acheminement des emails (Resend). Elles ne sont ni vendues, ni louées, ni cédées à des tiers à des fins commerciales."
+      },
+      {
+        "title": "Durée de conservation",
+        "text": "Les données liées à une demande sont conservées pendant la durée nécessaire à son traitement, puis au maximum 3 ans après le dernier contact à des fins de suivi commercial, sauf obligation légale de conservation plus longue (documents contractuels et comptables)."
+      },
+      {
+        "title": "Vos droits",
+        "text": "Conformément à la loi 09-08, vous disposez d'un droit d'accès, de rectification et d'opposition sur vos données. Pour l'exercer, écrivez à {email} en précisant votre demande ; nous répondons dans les meilleurs délais. Vous pouvez également saisir la CNDP (www.cndp.ma)."
+      },
+      {
+        "title": "Cookies et mesure d'audience",
+        "text": "Le site utilise uniquement des cookies techniques (préférence de thème, langue) et, le cas échéant, une mesure d'audience Google Analytics 4. Vous pouvez configurer votre navigateur pour refuser les cookies non essentiels sans que cela n'affecte la navigation."
+      },
+      {
+        "title": "Sécurité",
+        "text": "Les échanges avec le site sont chiffrés (HTTPS/TLS). Les accès aux données sont restreints, nominatifs et journalisés. Les fichiers joints sont transmis directement à l'équipe concernée et ne sont pas exposés publiquement."
+      }
+    ]
+  },
+  "forms": {
+    "quote": {
+      "title": "Votre demande",
+      "type": {
+        "label": "Type de demande",
+        "options": {
+          "developpement": "Développement web / mobile",
+          "cybersecurite": "Cybersécurité (pentest, audit)",
+          "conseil": "Conseil IT / nearshore",
+          "formation": "Formation",
+          "fourniture": "Fourniture de matériel"
+        }
+      },
+      "company": { "label": "Raison sociale", "placeholder": "Nom de votre organisation" },
+      "sector": {
+        "label": "Secteur",
+        "options": { "public": "Public / administration", "prive": "Privé" }
+      },
+      "ice": { "label": "ICE (optionnel)", "placeholder": "Identifiant commun de l'entreprise" },
+      "name": { "label": "Nom et prénom", "placeholder": "Votre nom complet" },
+      "role": { "label": "Fonction", "placeholder": "Ex. DSI, acheteur, gérant…" },
+      "email": { "label": "Email professionnel", "placeholder": "vous@organisation.ma" },
+      "phone": { "label": "Téléphone", "placeholder": "+212 6 XX XX XX XX" },
+      "description": {
+        "label": "Description du besoin",
+        "placeholder": "Décrivez votre projet, votre commande ou votre besoin en quelques lignes…"
+      },
+      "budget": {
+        "label": "Budget estimatif (MAD)",
+        "options": {
+          "lt50k": "Moins de 50 000",
+          "50to150k": "50 000 – 150 000",
+          "150to500k": "150 000 – 500 000",
+          "gt500k": "Plus de 500 000",
+          "nd": "À définir ensemble"
+        }
+      },
+      "deadline": {
+        "label": "Délai souhaité",
+        "options": {
+          "urgent": "Urgent (< 1 mois)",
+          "1to3": "1 à 3 mois",
+          "3to6": "3 à 6 mois",
+          "flexible": "Flexible"
+        }
+      },
+      "file": {
+        "label": "Pièce jointe (BC, CPS, cahier des charges…)",
+        "hint": "PDF ou image, 10 Mo maximum",
+        "remove": "Retirer le fichier"
+      },
+      "consent": "J'accepte que mes données soient traitées par Tachfir pour répondre à ma demande, conformément à la loi 09-08. Voir la politique de confidentialité.",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi en cours…",
+      "success": {
+        "title": "Demande bien reçue !",
+        "text": "Merci pour votre confiance. Un expert Tachfir vous répond sous 24-48 h ouvrées à l'adresse indiquée."
+      },
+      "error": "L'envoi a échoué. Réessayez, ou écrivez-nous directement par email."
+    },
+    "contact": {
+      "name": { "label": "Nom et prénom", "placeholder": "Votre nom complet" },
+      "email": { "label": "Email", "placeholder": "vous@exemple.com" },
+      "phone": { "label": "Téléphone (optionnel)", "placeholder": "+212 6 XX XX XX XX" },
+      "message": { "label": "Message", "placeholder": "Votre question ou votre besoin…" },
+      "consent": "J'accepte que mes données soient traitées par Tachfir pour répondre à ma demande, conformément à la loi 09-08.",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours…",
+      "success": {
+        "title": "Message envoyé !",
+        "text": "Merci ! Nous vous répondons sous 24-48 h ouvrées."
+      },
+      "error": "L'envoi a échoué. Réessayez, ou écrivez-nous directement par email."
+    },
+    "validation": {
+      "required": "Ce champ est requis",
+      "email": "Adresse email invalide",
+      "phone": "Numéro de téléphone invalide",
+      "minMessage": "Merci de détailler un minimum (10 caractères)",
+      "fileSize": "Fichier trop volumineux (10 Mo maximum)",
+      "fileType": "Format non accepté (PDF ou image uniquement)",
+      "consent": "Votre consentement est nécessaire pour traiter la demande"
     }
   }
 }
