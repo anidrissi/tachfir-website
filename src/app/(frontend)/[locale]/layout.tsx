@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata, Viewport } from 'next';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -7,6 +8,7 @@ import { Header } from '@/components/layout/header';
 import { WhatsAppButton } from '@/components/layout/whatsapp-button';
 import { AlternatesProvider } from '@/components/providers/alternates-provider';
 import { ThemeProvider } from '@/components/providers/theme-provider';
+import { OrgJsonLd } from '@/components/seo/org-jsonld';
 import { company } from '@/config/company';
 import { fontVariables } from '@/lib/fonts';
 import { routing, type Locale } from '@/i18n/routing';
@@ -18,6 +20,9 @@ export const metadata: Metadata = {
     template: '%s | Tachfir',
     default: 'Tachfir — Building Trust through Secure Tech',
   },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export const viewport: Viewport = {
@@ -72,6 +77,10 @@ export default async function LocaleLayout({ children, params }: Props) {
             </AlternatesProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
+        <OrgJsonLd locale={locale as Locale} />
+        {process.env.NEXT_PUBLIC_GA4_ID ? (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4_ID} />
+        ) : null}
       </body>
     </html>
   );
