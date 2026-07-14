@@ -1,0 +1,77 @@
+{
+  "common": {
+    "brandName": "Tachfir",
+    "brandLatin": "Tachfir",
+    "tagline": "Building Trust through Secure Tech",
+    "ctaQuote": "Quote / Purchase order",
+    "ctaContact": "Contact us",
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "seeAll": "See all",
+    "skipToContent": "Skip to content",
+    "pendingData": "[PENDING — data to be provided]",
+    "responseTime": "Reply within 24–48 h",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Hello Tachfir, I would like a quote for: ",
+    "whatsappAria": "Chat with us on WhatsApp",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "breadcrumbAria": "Breadcrumb",
+    "minutes": "min read"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "servicesDev": "Web & mobile development",
+    "servicesCyber": "Cybersecurity",
+    "servicesConsulting": "IT consulting & nearshore",
+    "servicesSupply": "IT hardware supply",
+    "servicesHub": "All services",
+    "formations": "Training",
+    "references": "References",
+    "certifications": "Certifications",
+    "blog": "Blog",
+    "contact": "Contact",
+    "about": "About",
+    "quote": "Request a quote",
+    "mainNavAria": "Main navigation"
+  },
+  "lang": {
+    "label": "Language",
+    "ar": "العربية",
+    "fr": "Français",
+    "en": "English"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light theme",
+    "dark": "Dark theme"
+  },
+  "footer": {
+    "description": "Moroccan IT services company: web & mobile development, cybersecurity, IT consulting & nearshore, training and IT hardware supply.",
+    "colServices": "Services",
+    "colCompany": "Company",
+    "colContact": "Contact details",
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy",
+    "rights": "All rights reserved",
+    "linkedinAria": "Our LinkedIn page",
+    "ice": "ICE",
+    "rc": "RC"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved. Go back to the homepage or explore our services.",
+    "backHome": "Back to home",
+    "services": "Our services",
+    "contact": "Contact us"
+  },
+  "home": {
+    "hero": {
+      "title": "IT services company in Morocco — security at the core of every project",
+      "subtitle": "Web & mobile development, cybersecurity, IT consulting, training and hardware supply — for public administrations and businesses in Morocco and France.",
+      "ctaQuote": "Request a quote",
+      "ctaServices": "Explore our services"
+    }
+  }
+}

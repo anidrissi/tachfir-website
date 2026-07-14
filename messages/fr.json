@@ -1,0 +1,77 @@
+{
+  "common": {
+    "brandName": "Tachfir",
+    "brandLatin": "Tachfir",
+    "tagline": "La confiance par la technologie sécurisée",
+    "ctaQuote": "Devis / Bon de commande",
+    "ctaContact": "Nous contacter",
+    "readMore": "Lire la suite",
+    "learnMore": "En savoir plus",
+    "seeAll": "Tout voir",
+    "skipToContent": "Aller au contenu",
+    "pendingData": "[EN_ATTENTE — donnée à compléter]",
+    "responseTime": "Réponse sous 24-48 h",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Bonjour Tachfir, je souhaite un devis pour : ",
+    "whatsappAria": "Nous contacter sur WhatsApp",
+    "menu": "Menu",
+    "closeMenu": "Fermer le menu",
+    "breadcrumbAria": "Fil d'Ariane",
+    "minutes": "min de lecture"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "servicesDev": "Développement web & mobile",
+    "servicesCyber": "Cybersécurité",
+    "servicesConsulting": "Conseil IT & nearshore",
+    "servicesSupply": "Fourniture informatique",
+    "servicesHub": "Tous les services",
+    "formations": "Formations",
+    "references": "Références",
+    "certifications": "Certifications",
+    "blog": "Blog",
+    "contact": "Contact",
+    "about": "À propos",
+    "quote": "Demander un devis",
+    "mainNavAria": "Navigation principale"
+  },
+  "lang": {
+    "label": "Langue",
+    "ar": "العربية",
+    "fr": "Français",
+    "en": "English"
+  },
+  "theme": {
+    "toggle": "Changer de thème",
+    "light": "Thème clair",
+    "dark": "Thème sombre"
+  },
+  "footer": {
+    "description": "Société marocaine de services informatiques : développement web & mobile, cybersécurité, conseil IT & nearshore, formation et fourniture de matériel informatique.",
+    "colServices": "Services",
+    "colCompany": "Entreprise",
+    "colContact": "Coordonnées",
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "rights": "Tous droits réservés",
+    "linkedinAria": "Notre page LinkedIn",
+    "ice": "ICE",
+    "rc": "RC"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "Désolé, la page que vous cherchez n'existe pas ou a été déplacée. Retournez à l'accueil ou explorez nos services.",
+    "backHome": "Retour à l'accueil",
+    "services": "Nos services",
+    "contact": "Nous contacter"
+  },
+  "home": {
+    "hero": {
+      "title": "Société de services informatiques au Maroc — la sécurité au cœur de chaque projet",
+      "subtitle": "Développement web & mobile, cybersécurité, conseil IT, formation et fourniture de matériel — pour les administrations et entreprises au Maroc et en France.",
+      "ctaQuote": "Demander un devis",
+      "ctaServices": "Découvrir nos services"
+    }
+  }
+}

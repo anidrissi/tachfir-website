@@ -1,0 +1,45 @@
+# CI — lint, typecheck, seed (SQLite locale) et build.
+# Aucun service externe requis : les env ci-dessous sont des valeurs factices sûres.
+# Le déploiement est assuré par l'intégration Git de Vercel (previews sur PR, prod sur main).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    name: Lint · Typecheck · Build
+    runs-on: ubuntu-latest
+    env:
+      PAYLOAD_SECRET: ci-secret-de-test-uniquement-jamais-en-production
+      DATABASE_URI: file:./ci-tachfir.db
+      NEXT_PUBLIC_SITE_URL: https://www.tachfir.com
+      PAYLOAD_ADMIN_EMAIL: ci-admin@example.com
+      PAYLOAD_ADMIN_PASSWORD: ci-mot-de-passe-test-1234
+      CONTACT_EMAIL: ci@example.com
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Seed (crée le schéma SQLite + contenus de démo)
+        run: npm run seed
+
+      - name: Build
+        run: npm run build
