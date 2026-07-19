@@ -1,7 +1,7 @@
 import type { Where } from 'payload';
 import type { Locale } from '@/i18n/routing';
 import { getPayloadClient } from '@/lib/payload';
-import type { Client, Formation, Post, Testimonial } from '@/payload-types';
+import type { Client, Expertise, Formation, Post, Testimonial } from '@/payload-types';
 
 /**
  * Requêtes de contenu (Local API) — sûres : en cas de base indisponible
@@ -76,6 +76,45 @@ export function getFormations(locale: Locale, limit = 50): Promise<Formation[]> 
   );
 }
 
+export function getExpertises(locale: Locale, limit = 50): Promise<Expertise[]> {
+  return safe(
+    async () => {
+      const payload = await getPayloadClient();
+      const res = await payload.find({
+        collection: 'expertises',
+        where: PUBLISHED,
+        draft: false,
+        sort: 'order',
+        locale,
+        fallbackLocale: 'ar',
+        limit,
+      });
+      return res.docs;
+    },
+    [],
+    'expertises',
+  );
+}
+
+export function getExpertiseBySlug(locale: Locale, slug: string): Promise<Expertise | null> {
+  return safe(
+    async () => {
+      const payload = await getPayloadClient();
+      const res = await payload.find({
+        collection: 'expertises',
+        where: { and: [PUBLISHED, { slug: { equals: slug } }] },
+        draft: false,
+        locale,
+        fallbackLocale: 'ar',
+        limit: 1,
+      });
+      return res.docs[0] ?? null;
+    },
+    null,
+    `expertise ${slug}`,
+  );
+}
+
 export function getPosts(locale: Locale, limit = 50): Promise<Post[]> {
   return safe(
     async () => {
@@ -138,7 +177,7 @@ export function getPostBySlug(locale: Locale, slug: string): Promise<Post | null
 
 /** Slugs localisés d'un document (pour hreflang + sélecteur de langue). */
 export function getLocalizedSlugs(
-  collection: 'posts' | 'formations',
+  collection: 'posts' | 'formations' | 'expertises',
   id: number | string,
 ): Promise<Partial<Record<Locale, string>>> {
   return safe(

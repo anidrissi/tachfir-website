@@ -46,7 +46,7 @@ export async function OrgJsonLd({ locale }: { locale: Locale }) {
         url: company.siteUrl,
         image: `${company.siteUrl}/brand/logo.svg`,
         parentOrganization: { '@id': `${company.siteUrl}/#organization` },
-        areaServed: ['MA', 'FR'],
+        areaServed: ['MA', 'FR', 'BE', 'CA', 'AE', 'SA', 'QA'],
         email: settings.email,
         ...telephone,
         ...address,

@@ -68,6 +68,7 @@ async function seedSettings(payload: Payload) {
       rc: company.rc,
       deliveryZones: '[في الانتظار — مناطق التوصيل، مثلاً: جميع أنحاء المغرب]',
       responseBanner: 'نرد خلال 24 إلى 48 ساعة',
+      shortlistBanner: 'قائمة مختصرة خلال 72 ساعة',
     },
   });
   await payload.updateGlobal({
@@ -79,6 +80,7 @@ async function seedSettings(payload: Payload) {
       city: company.address.city,
       deliveryZones: '[EN_ATTENTE — zones de livraison, ex. tout le Maroc]',
       responseBanner: 'Réponse sous 24-48 h',
+      shortlistBanner: 'Shortlist sous 72 h',
     },
   });
   await payload.updateGlobal({
@@ -90,6 +92,7 @@ async function seedSettings(payload: Payload) {
       city: company.address.city,
       deliveryZones: '[PENDING — delivery zones, e.g. all of Morocco]',
       responseBanner: 'Reply within 24–48 h',
+      shortlistBanner: 'Shortlist within 72 h',
     },
   });
 

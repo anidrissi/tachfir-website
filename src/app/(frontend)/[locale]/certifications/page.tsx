@@ -85,7 +85,7 @@ export default async function CertificationsPage({ params }: Props) {
         <Container>
           <h2 className="mx-auto max-w-2xl text-3xl font-bold">{t('cta.title')}</h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <ButtonLink href="/services/conseil-it-nearshore" size="lg">
+            <ButtonLink href="/services/outsourcing-talents-it" size="lg">
               {t('cta.buttonConsulting')}
             </ButtonLink>
             <ButtonLink href="/formations" size="lg" variant="outline">

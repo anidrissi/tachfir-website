@@ -12,8 +12,9 @@ type NavChild = { href: StaticAppPathname; label: string };
 const SERVICE_CHILDREN: Array<{ href: StaticAppPathname; key: string }> = [
   { href: '/services/developpement-web-mobile', key: 'servicesDev' },
   { href: '/services/cybersecurite', key: 'servicesCyber' },
-  { href: '/services/conseil-it-nearshore', key: 'servicesConsulting' },
+  { href: '/services/outsourcing-talents-it', key: 'servicesOutsourcing' },
   { href: '/services/fourniture-informatique', key: 'servicesSupply' },
+  { href: '/expertises', key: 'servicesExpertises' },
 ];
 
 function useCloseOnOutsideOrEscape(open: boolean, close: () => void) {

@@ -19,6 +19,8 @@ export type SiteSettings = {
   deliveryZones: string;
   /** Bandeau de réassurance près des CTA — null → texte par défaut des messages */
   responseBanner: string | null;
+  /** Bandeau outsourcing (« Shortlist sous 72 h ») — null → texte par défaut */
+  shortlistBanner: string | null;
 };
 
 const fallback: SiteSettings = {
@@ -32,6 +34,7 @@ const fallback: SiteSettings = {
   rc: company.rc,
   deliveryZones: company.deliveryZones,
   responseBanner: null,
+  shortlistBanner: null,
 };
 
 export async function getSettings(locale: Locale): Promise<SiteSettings> {
@@ -49,6 +52,7 @@ export async function getSettings(locale: Locale): Promise<SiteSettings> {
       rc: doc?.rc || fallback.rc,
       deliveryZones: doc?.deliveryZones || fallback.deliveryZones,
       responseBanner: doc?.responseBanner || null,
+      shortlistBanner: doc?.shortlistBanner || null,
     };
   } catch (err) {
     // Base indisponible (premier build, CI sans seed…) : placeholders visibles.

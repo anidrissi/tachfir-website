@@ -38,7 +38,7 @@ const POLES: Array<{
 }> = [
   { key: 'dev', href: '/services/developpement-web-mobile', icon: Code2 },
   { key: 'cyber', href: '/services/cybersecurite', icon: ShieldCheck },
-  { key: 'consulting', href: '/services/conseil-it-nearshore', icon: Users },
+  { key: 'consulting', href: '/services/outsourcing-talents-it', icon: Users },
   { key: 'formation', href: '/formations', icon: GraduationCap },
 ];
 

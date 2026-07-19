@@ -10,7 +10,7 @@ const phoneRegex = /^\+?[\d\s().-]{8,20}$/;
 export const QUOTE_TYPES = [
   'developpement',
   'cybersecurite',
-  'conseil',
+  'outsourcing',
   'formation',
   'fourniture',
 ] as const;
@@ -52,6 +52,34 @@ export const contactSchema = z.object({
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;
+
+/** Dépôt de CV /talents → collection `candidatures` (CV en upload privé). */
+export const TALENT_SENIORITIES = ['junior', 'confirme', 'senior'] as const;
+
+export const talentSchema = z.object({
+  fullName: z.string().trim().min(1, 'required').max(120),
+  email: z.email('email'),
+  phone: z.string().trim().regex(phoneRegex, 'phone'),
+  /** id d'une expertise CMS, ou 'other' */
+  expertise: z.string().trim().min(1, 'required').max(120),
+  expertiseOther: z.string().trim().max(120).optional().or(z.literal('')),
+  seniority: z.enum(TALENT_SENIORITIES, 'required'),
+  availability: z.string().trim().max(120).optional().or(z.literal('')),
+  remote: z.string().trim().max(120).optional().or(z.literal('')),
+  linkedin: z.string().trim().max(300).optional().or(z.literal('')),
+  consent: z.literal(true, 'consent'),
+  /** Honeypot */
+  website: z.string().optional(),
+});
+
+export type TalentInput = z.infer<typeof talentSchema>;
+
+/** CV : PDF uniquement (≤ 10 Mo). */
+export const CV_ACCEPT = 'application/pdf';
+
+export function isAllowedCvType(mime: string): boolean {
+  return mime === 'application/pdf';
+}
 
 /** Contraintes de la pièce jointe (devis / bon de commande). */
 export const FILE_MAX_BYTES = 10 * 1024 * 1024; // 10 Mo

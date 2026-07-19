@@ -34,7 +34,11 @@
     "contact": "Contact",
     "about": "À propos",
     "quote": "Demander un devis",
-    "mainNavAria": "Navigation principale"
+    "mainNavAria": "Navigation principale",
+    "servicesOutsourcing": "Outsourcing & Talents IT",
+    "servicesExpertises": "Expertises",
+    "talents": "Talents",
+    "talentsJoin": "Consultants : rejoignez notre vivier"
   },
   "lang": {
     "label": "Langue",
@@ -48,7 +52,7 @@
     "dark": "Thème sombre"
   },
   "footer": {
-    "description": "Société marocaine de services informatiques : développement web & mobile, cybersécurité, conseil IT & nearshore, formation et fourniture de matériel informatique.",
+    "description": "Société marocaine de services informatiques : développement web & mobile, cybersécurité, outsourcing & talents IT, formation et fourniture de matériel informatique et de vidéosurveillance.",
     "colServices": "Services",
     "colCompany": "Entreprise",
     "colContact": "Coordonnées",
@@ -126,6 +130,18 @@
     "privacy": {
       "title": "Politique de confidentialité (Loi 09-08)",
       "description": "Comment Tachfir collecte, utilise et protège vos données personnelles, conformément à la loi marocaine 09-08 et aux exigences de la CNDP."
+    },
+    "serviceOutsourcing": {
+      "title": "Outsourcing IT & recrutement de talents au Maroc",
+      "description": "Régie, staff augmentation, offshoring et placement de profils IT certifiés (Java, Angular, ServiceNow, DevOps). Shortlist sous 72 h."
+    },
+    "expertises": {
+      "title": "Consultants IT : Java, Angular, ServiceNow, DevOps",
+      "description": "Recrutez des consultants IT certifiés : Java/Spring, Angular/React, ServiceNow, pentest, DevOps & Cloud. Profils disponibles, shortlist sous 72 h."
+    },
+    "talents": {
+      "title": "Consultants IT : rejoignez le vivier Tachfir",
+      "description": "Missions au Maroc, en France et dans le Golfe, en remote ou sur site. Déposez votre CV et rejoignez le vivier de talents IT de Tachfir."
     }
   },
   "home": {
@@ -157,8 +173,8 @@
         "text": "Tests d'intrusion et audits de sécurité menés par des consultants certifiés. Rapport clair, plan de remédiation, contre-test inclus."
       },
       "consulting": {
-        "title": "Conseil IT & nearshore",
-        "text": "Régie, AMOA, TMA : des profils certifiés qui renforcent vos équipes au Maroc comme en France, avec un pilotage transparent."
+        "title": "Outsourcing & Talents IT",
+        "text": "Régie, staff augmentation, offshoring et placement de profils IT certifiés — du Maroc à la France, la Belgique, le Canada et le Golfe."
       },
       "formation": {
         "title": "Formation",
@@ -217,8 +233,8 @@
         "text": "Tests d'intrusion, audits de sécurité et accompagnement à la remédiation pour protéger vos actifs numériques."
       },
       "consulting": {
-        "title": "Conseil IT & nearshore",
-        "text": "Régie, AMOA et TMA au Maroc et pour la France : les bons profils, au bon moment, au bon coût."
+        "title": "Outsourcing & Talents IT",
+        "text": "Régie, offshoring, centre de services et chasse de talents : les bons profils IT, shortlist sous 72 h."
       },
       "formation": {
         "title": "Formation certifiante",
@@ -275,7 +291,14 @@
     },
     "stack": {
       "title": "Notre stack",
-      "items": ["React / Next.js", "Spring Boot / Java", "AWS & Azure", "Figma (UX/UI)", "Scrum / SAFe", "CI/CD & conteneurs"]
+      "items": [
+        "React / Next.js",
+        "Spring Boot / Java",
+        "AWS & Azure",
+        "Figma (UX/UI)",
+        "Scrum / SAFe",
+        "CI/CD & conteneurs"
+      ]
     },
     "deliverables": {
       "title": "Ce que vous recevez",
@@ -774,15 +797,24 @@
     "groups": {
       "agile": {
         "title": "Agilité & pilotage",
-        "items": ["Professional Scrum Master (PSM)", "Certified SAFe® 5"]
+        "items": [
+          "Professional Scrum Master (PSM)",
+          "Certified SAFe® 5"
+        ]
       },
       "dev": {
         "title": "Développement",
-        "items": ["Oracle Certified Professional Java", "Oracle Certified Expert Java EE"]
+        "items": [
+          "Oracle Certified Professional Java",
+          "Oracle Certified Expert Java EE"
+        ]
       },
       "network": {
         "title": "Réseaux & cybersécurité",
-        "items": ["CCNA Switching / Routing / Wireless", "Cisco CyberOps Associate"]
+        "items": [
+          "CCNA Switching / Routing / Wireless",
+          "Cisco CyberOps Associate"
+        ]
       },
       "cloud": {
         "title": "Cloud & DevOps",
@@ -990,21 +1022,42 @@
         "options": {
           "developpement": "Développement web / mobile",
           "cybersecurite": "Cybersécurité (pentest, audit)",
-          "conseil": "Conseil IT / nearshore",
+          "outsourcing": "Outsourcing & Talents IT",
           "formation": "Formation",
-          "fourniture": "Fourniture de matériel"
+          "fourniture": "Fourniture matériel & surveillance"
         }
       },
-      "company": { "label": "Raison sociale", "placeholder": "Nom de votre organisation" },
+      "company": {
+        "label": "Raison sociale",
+        "placeholder": "Nom de votre organisation"
+      },
       "sector": {
         "label": "Secteur",
-        "options": { "public": "Public / administration", "prive": "Privé" }
+        "options": {
+          "public": "Public / administration",
+          "prive": "Privé"
+        }
       },
-      "ice": { "label": "ICE (optionnel)", "placeholder": "Identifiant commun de l'entreprise" },
-      "name": { "label": "Nom et prénom", "placeholder": "Votre nom complet" },
-      "role": { "label": "Fonction", "placeholder": "Ex. DSI, acheteur, gérant…" },
-      "email": { "label": "Email professionnel", "placeholder": "vous@organisation.ma" },
-      "phone": { "label": "Téléphone", "placeholder": "+212 6 XX XX XX XX" },
+      "ice": {
+        "label": "ICE (optionnel)",
+        "placeholder": "Identifiant commun de l'entreprise"
+      },
+      "name": {
+        "label": "Nom et prénom",
+        "placeholder": "Votre nom complet"
+      },
+      "role": {
+        "label": "Fonction",
+        "placeholder": "Ex. DSI, acheteur, gérant…"
+      },
+      "email": {
+        "label": "Email professionnel",
+        "placeholder": "vous@organisation.ma"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "+212 6 XX XX XX XX"
+      },
       "description": {
         "label": "Description du besoin",
         "placeholder": "Décrivez votre projet, votre commande ou votre besoin en quelques lignes…"
@@ -1043,10 +1096,22 @@
       "error": "L'envoi a échoué. Réessayez, ou écrivez-nous directement par email."
     },
     "contact": {
-      "name": { "label": "Nom et prénom", "placeholder": "Votre nom complet" },
-      "email": { "label": "Email", "placeholder": "vous@exemple.com" },
-      "phone": { "label": "Téléphone (optionnel)", "placeholder": "+212 6 XX XX XX XX" },
-      "message": { "label": "Message", "placeholder": "Votre question ou votre besoin…" },
+      "name": {
+        "label": "Nom et prénom",
+        "placeholder": "Votre nom complet"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "vous@exemple.com"
+      },
+      "phone": {
+        "label": "Téléphone (optionnel)",
+        "placeholder": "+212 6 XX XX XX XX"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Votre question ou votre besoin…"
+      },
       "consent": "J'accepte que mes données soient traitées par Tachfir pour répondre à ma demande, conformément à la loi 09-08.",
       "submit": "Envoyer le message",
       "sending": "Envoi en cours…",
@@ -1063,7 +1128,246 @@
       "minMessage": "Merci de détailler un minimum (10 caractères)",
       "fileSize": "Fichier trop volumineux (10 Mo maximum)",
       "fileType": "Format non accepté (PDF ou image uniquement)",
-      "consent": "Votre consentement est nécessaire pour traiter la demande"
+      "consent": "Votre consentement est nécessaire pour traiter la demande",
+      "cvType": "Le CV doit être au format PDF",
+      "cvRequired": "Merci de joindre votre CV (PDF)"
+    },
+    "talent": {
+      "title": "Déposer ma candidature",
+      "fullName": {
+        "label": "Nom complet",
+        "placeholder": "Prénom et nom"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "vous@exemple.com"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "+212 6 00 00 00 00"
+      },
+      "linkedin": {
+        "label": "LinkedIn (facultatif)",
+        "placeholder": "https://linkedin.com/in/…"
+      },
+      "expertise": {
+        "label": "Expertise principale",
+        "other": "Autre"
+      },
+      "expertiseOther": {
+        "label": "Précisez votre expertise",
+        "placeholder": "Ex. Data, SAP, .NET…"
+      },
+      "seniority": {
+        "label": "Séniorité",
+        "options": {
+          "junior": "Junior",
+          "confirme": "Confirmé",
+          "senior": "Senior"
+        }
+      },
+      "availability": {
+        "label": "Disponibilité (facultatif)",
+        "placeholder": "Ex. immédiate, sous 1 mois"
+      },
+      "remote": {
+        "label": "Remote / mobilité (facultatif)",
+        "placeholder": "Ex. remote, hybride, mobile"
+      },
+      "cv": {
+        "label": "CV (PDF)",
+        "hint": "PDF uniquement, 10 Mo maximum",
+        "remove": "Retirer le fichier"
+      },
+      "consent": "J’accepte que Tachfir conserve mes données et mon CV afin de me proposer des missions (Loi 09-08).",
+      "success": {
+        "title": "Candidature envoyée",
+        "text": "Merci ! Votre profil rejoint notre vivier. Nous vous recontactons dès qu’une mission correspond."
+      },
+      "error": "L’envoi a échoué. Merci de réessayer ou de nous écrire directement.",
+      "sending": "Envoi…",
+      "submit": "Envoyer ma candidature"
+    }
+  },
+  "serviceOutsourcing": {
+    "hero": {
+      "eyebrow": "Outsourcing & Talents IT",
+      "title": "Outsourcing IT & talents : les bons profils, du Maroc au Golfe",
+      "intro": "Régie, staff augmentation, offshoring-nearshoring, centre de services et chasse de profils IT. Nous renforçons vos équipes avec des consultants certifiés — France, Belgique, Canada et pays du Golfe — avec une shortlist sous 72 h.",
+      "cta": "Décrire mon besoin"
+    },
+    "problem": {
+      "title": "Votre enjeu",
+      "text": "Recruter un bon développeur ou un chef de projet expérimenté prend des mois — et vos projets n'attendent pas. Pour les entreprises françaises, s'ajoute l'équation du coût : les talents existent, mais pas toujours au bon tarif. Le nearshore marocain répond aux deux : des compétences certifiées, disponibles rapidement, dans votre fuseau horaire et votre langue."
+    },
+    "approach": {
+      "title": "Notre démarche",
+      "steps": [
+        {
+          "title": "Qualification du besoin",
+          "text": "Compétences, séniorité, contexte projet, durée : nous cadrons précisément avant de proposer."
+        },
+        {
+          "title": "Profils présélectionnés",
+          "text": "CV qualifiés et entretiens techniques organisés rapidement — vous validez, nous engageons."
+        },
+        {
+          "title": "Intégration encadrée",
+          "text": "Onboarding structuré, environnement sécurisé, points quotidiens les premières semaines."
+        },
+        {
+          "title": "Pilotage & reporting",
+          "text": "Compte rendu d'activité régulier, indicateurs convenus, point mensuel de gouvernance."
+        },
+        {
+          "title": "Montée en charge maîtrisée",
+          "text": "Extension d'équipe, transfert de compétences ou réversibilité : tout est contractualisé."
+        }
+      ]
+    },
+    "nearshoreArgs": {
+      "title": "Pourquoi Tachfir pour vos équipes étendues",
+      "items": [
+        {
+          "title": "Fuseau horaire aligné",
+          "text": "0 à 1 h d'écart avec Paris : vos équipes travaillent en temps réel, pas en décalé."
+        },
+        {
+          "title": "Francophonie native",
+          "text": "Réunions, documentation, code reviews : tout se passe en français, sans friction."
+        },
+        {
+          "title": "Coûts optimisés",
+          "text": "Des tarifs sensiblement inférieurs aux prestations équivalentes en France, à compétences certifiées égales."
+        },
+        {
+          "title": "Cadre clair",
+          "text": "Contrats de droit adapté, clauses RGPD, confidentialité et propriété intellectuelle verrouillées."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "Nos modes d'intervention",
+      "items": [
+        "Régie : un ou plusieurs consultants intégrés à vos équipes",
+        "AMOA : cadrage, expression de besoin, pilotage de projet",
+        "TMA : maintenance applicative avec engagements de service",
+        "Équipe dédiée nearshore pilotée par Tachfir",
+        "Audit et schéma directeur SI",
+        "Transfert de compétences et accompagnement au changement"
+      ]
+    },
+    "why": {
+      "title": "Pourquoi Tachfir",
+      "points": [
+        {
+          "title": "Des consultants certifiés",
+          "text": "PSM, SAFe, Java, cloud, Kubernetes : les certifications de nos équipes sont vérifiables — et vérifiées par nos clients ESN les plus exigeants."
+        },
+        {
+          "title": "Habitués aux ESN et grands comptes",
+          "text": "Intelcia, Proxiad, Alten, SFR : nous connaissons les exigences de qualité et de reporting des grandes organisations."
+        },
+        {
+          "title": "Engagement dans la durée",
+          "text": "Suivi de mission réel, remplacement encadré si besoin, et un objectif : que chaque consultant apporte plus que sa fiche de poste."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Quelle différence entre régie et forfait ?",
+          "a": "En régie, vous pilotez le consultant intégré à vos équipes et payez le temps passé. Au forfait, nous nous engageons sur un résultat, un délai et un prix. La TMA combine souvent les deux : un socle forfaitaire et des unités d'œuvre."
+        },
+        {
+          "q": "Pourquoi choisir le nearshore au Maroc plutôt que l'offshore lointain ?",
+          "a": "Même fuseau horaire que Paris (0 à 1 h d'écart), français courant, allers-retours faciles (3 h de vol), culture de travail proche et cadre juridique éprouvé par des centaines d'entreprises françaises déjà installées. Vous gardez la réactivité d'une équipe locale, au coût du nearshore."
+        },
+        {
+          "q": "Sous quel délai un consultant peut-il démarrer ?",
+          "a": "Pour les compétences courantes (développement Java/React, DevOps, QA), nous présentons généralement des profils sous une à deux semaines. Le démarrage effectif dépend de vos processus de validation et des accès à provisionner."
+        },
+        {
+          "q": "Comment gérez-vous la protection des données (RGPD / Loi 09-08) ?",
+          "a": "Clauses contractuelles types pour les transferts, accès nominatifs et journalisés, environnements cloisonnés, sensibilisation des consultants. Le Maroc dispose de son propre cadre (Loi 09-08, CNDP) que nous appliquons nativement."
+        },
+        {
+          "q": "Quels types de profils proposez-vous ?",
+          "a": "Développeurs front/back/full-stack, DevOps et cloud (AWS, Azure, OCI, Kubernetes), consultants cybersécurité, QA, Scrum Masters et chefs de projet certifiés PSM/SAFe, business analysts AMOA."
+        },
+        {
+          "q": "Peut-on commencer petit avant d'étendre ?",
+          "a": "C'est même recommandé : beaucoup de nos clients démarrent avec un consultant ou un petit périmètre TMA, puis étendent l'équipe une fois la confiance et les processus installés."
+        }
+      ]
+    },
+    "related": {
+      "title": "Pour aller plus loin",
+      "quote": "Décrire mon besoin",
+      "formation": "Formation gestion de projet agile Scrum & SAFe",
+      "article": "Lire : nearshore au Maroc, pourquoi les entreprises françaises externalisent"
+    }
+  },
+  "expertisesPage": {
+    "hero": {
+      "eyebrow": "Expertises",
+      "title": "Nos expertises technologiques",
+      "intro": "Java/Spring, Angular/React, ServiceNow, pentest, DevOps & Cloud : des consultants certifiés, disponibles en régie, au forfait ou en placement — au Maroc comme pour la France, la Belgique, le Canada et le Golfe."
+    },
+    "card": {
+      "details": "En savoir plus"
+    },
+    "empty": "Nos fiches d’expertise arrivent bientôt. Contactez-nous pour recevoir des profils qualifiés.",
+    "detail": {
+      "cta": "Décrire mon besoin",
+      "ctaTalent": "rejoignez notre vivier",
+      "candidateHint": "Vous êtes ce profil ?",
+      "backToList": "Toutes les expertises",
+      "seniorities": "Séniorités disponibles",
+      "modalities": "Modalités",
+      "needProfiles": "Besoin de ce profil ?",
+      "needProfilesText": "Recevez une shortlist de consultants qualifiés sous 72 h."
+    },
+    "why": {
+      "title": "Pourquoi Tachfir",
+      "points": [
+        {
+          "title": "Des consultants certifiés",
+          "text": "Java, Angular, ServiceNow, cloud, sécurité : des compétences vérifiables, éprouvées chez des ESN et grands comptes."
+        },
+        {
+          "title": "Disponibilité rapide",
+          "text": "Une shortlist de profils qualifiés sous 72 h, avec entretiens techniques organisés sans délai."
+        },
+        {
+          "title": "Plusieurs modalités",
+          "text": "Régie, forfait ou placement : le mode d’engagement s’adapte à votre besoin et à votre marché."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Un profil à renforcer ?",
+      "text": "Décrivez votre besoin : nous vous envoyons une shortlist de consultants qualifiés sous 72 h.",
+      "button": "Décrire mon besoin"
+    }
+  },
+  "talentsPage": {
+    "hero": {
+      "eyebrow": "Talents",
+      "title": "Rejoignez le vivier de talents Tachfir",
+      "intro": "Des missions au Maroc, en France, en Belgique, au Canada et dans le Golfe — en remote ou sur site. Déposez votre CV : nous revenons vers vous dès qu’une mission correspond à votre profil."
+    },
+    "aside": {
+      "title": "Pourquoi nous rejoindre",
+      "reasons": [
+        "Des missions variées chez des ESN et grands comptes",
+        "Remote, hybride ou sur site selon les projets",
+        "Un accompagnement et un suivi de carrière réels",
+        "Des projets au Maroc, en Europe et dans le Golfe"
+      ],
+      "confidential": "Vos données et votre CV restent strictement confidentiels (Loi 09-08)."
     }
   }
 }

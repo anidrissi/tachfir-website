@@ -1,5 +1,6 @@
 import type { Payload } from 'payload';
 import { ensureCover } from './covers';
+import { expertiseDescription, expertisesSeed } from './expertises-data';
 import { formationsSeed } from './formations-data';
 import { postCertifications } from './post-certifications';
 import { postMarchesPublics } from './post-marches-publics';
@@ -122,6 +123,63 @@ async function seedFormations(payload: Payload) {
       });
     }
     payload.logger.info(`Formation seedée (ar/fr/en) : ${seed.fr.slug}`);
+  }
+}
+
+async function seedExpertises(payload: Payload) {
+  for (const seed of expertisesSeed) {
+    const existing = await payload.find({
+      collection: 'expertises',
+      where: { slug: { equals: seed.ar.slug } },
+      locale: 'ar',
+      draft: true,
+      limit: 1,
+    });
+    if (existing.totalDocs > 0) {
+      payload.logger.info(`Expertise déjà présente : ${seed.fr.slug}`);
+      continue;
+    }
+
+    const technologies = seed.technologies.map((name) => ({ name }));
+
+    const created = await payload.create({
+      collection: 'expertises',
+      locale: 'ar',
+      draft: false,
+      context,
+      data: {
+        title: seed.ar.title,
+        slug: seed.ar.slug,
+        tagline: seed.ar.tagline,
+        description: expertiseDescription('ar', seed.ar.intro) as never,
+        technologies,
+        seniorities: seed.seniorities,
+        modalities: seed.modalities,
+        order: seed.order,
+        seo: seed.ar.seo,
+        _status: 'published',
+      },
+    });
+
+    for (const locale of ['fr', 'en'] as const) {
+      const data = seed[locale];
+      await payload.update({
+        collection: 'expertises',
+        id: created.id,
+        locale,
+        draft: false,
+        context,
+        data: {
+          title: data.title,
+          slug: data.slug,
+          tagline: data.tagline,
+          description: expertiseDescription(locale, data.intro) as never,
+          seo: data.seo,
+          _status: 'published',
+        },
+      });
+    }
+    payload.logger.info(`Expertise seedée (ar/fr/en) : ${seed.fr.slug}`);
   }
 }
 
@@ -253,6 +311,7 @@ export async function seedContent(payload: Payload) {
   await seedPost(payload, postNearshore as unknown as PostSeed);
   await seedPost(payload, postCertifications as unknown as PostSeed);
   await seedFormations(payload);
+  await seedExpertises(payload);
   await seedTestimonials(payload);
   await seedClients(payload);
 }

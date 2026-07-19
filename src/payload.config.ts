@@ -9,7 +9,10 @@ import { en } from '@payloadcms/translations/languages/en';
 import { fr } from '@payloadcms/translations/languages/fr';
 import { buildConfig } from 'payload';
 import sharp from 'sharp';
+import { Candidatures } from '@/collections/candidatures';
 import { Clients } from '@/collections/clients';
+import { CvUploads } from '@/collections/cv-uploads';
+import { Expertises } from '@/collections/expertises';
 import { Formations } from '@/collections/formations';
 import { Media } from '@/collections/media';
 import { Posts } from '@/collections/posts';
@@ -59,7 +62,17 @@ export default buildConfig({
 
   editor: lexicalEditor(),
 
-  collections: [Posts, Formations, Testimonials, Clients, Media, Users],
+  collections: [
+    Posts,
+    Formations,
+    Expertises,
+    Testimonials,
+    Clients,
+    Media,
+    Candidatures,
+    CvUploads,
+    Users,
+  ],
   globals: [Settings],
 
   graphQL: { disable: true },

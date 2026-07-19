@@ -9,8 +9,9 @@ import { getSettings } from '@/lib/settings';
 const SERVICE_LINKS: Array<{ href: StaticAppPathname; key: string }> = [
   { href: '/services/developpement-web-mobile', key: 'servicesDev' },
   { href: '/services/cybersecurite', key: 'servicesCyber' },
-  { href: '/services/conseil-it-nearshore', key: 'servicesConsulting' },
+  { href: '/services/outsourcing-talents-it', key: 'servicesOutsourcing' },
   { href: '/services/fourniture-informatique', key: 'servicesSupply' },
+  { href: '/expertises', key: 'servicesExpertises' },
   { href: '/formations', key: 'formations' },
 ];
 
@@ -19,6 +20,7 @@ const COMPANY_LINKS: Array<{ href: StaticAppPathname; key: string }> = [
   { href: '/references', key: 'references' },
   { href: '/certifications', key: 'certifications' },
   { href: '/blog', key: 'blog' },
+  { href: '/talents', key: 'talentsJoin' },
   { href: '/contact', key: 'contact' },
   { href: '/devis', key: 'quote' },
 ];

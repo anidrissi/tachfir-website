@@ -21,6 +21,9 @@ export const isAdminOrEditor: Access = ({ req }) => {
 /** Lecture publique. */
 export const anyone: Access = () => true;
 
+/** Toujours refusé (ex. création via Local API `overrideAccess` uniquement). */
+export const never: Access = () => false;
+
 /**
  * Lecture : contenus publiés pour les visiteurs anonymes,
  * tout (y compris brouillons) pour les utilisateurs connectés.

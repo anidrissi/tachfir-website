@@ -1,117 +1,179 @@
-# SESSION-RESUME.md — reprise de session (état au 14/07/2026)
+# SESSION-RESUME.md — reprise de session (état au 18/07/2026)
 
 > **Usage** : pour reprendre le travail, ouvrez Claude Code dans
 > `D:\Sources\TACHFIR\website` et demandez-lui de lire ce fichier.
 > Il contient l'état exact du projet, les pièges connus et les prochaines actions.
 
-## 1. Où en est le projet
+## 0. Résumé express
 
-- **Livraison v1.0.0 complète et taguée** (`git tag v1.0.0`). Les 9 étapes du
-  cahier des charges (`docs/PROMPT-CLAUDE-CODE-TACHFIR.md`) sont terminées et
-  la checklist §14 est passée point par point (résultats ci-dessous).
-- 10 commits Conventional Commits sur `main`. Pas de remote configuré
-  (le push GitHub est une action client — voir README §4.1).
-- Dernier build : OK (80 pages statiques, 3 locales, slugs arabes inclus).
-- Un serveur `npm run dev` peut encore tourner en arrière-plan
-  (logs → `dev-server.log` à la racine ; port 3000).
+- **v1.0.0** livrée et taguée (14/07/2026).
+- **Refonte v2 en cours** : la spec `docs/PROMPT-CLAUDE-CODE-TACHFIR.md` a été
+  mise à jour le 18/07 (ajout des marchés **Golfe** + francophonie **BE/CA**,
+  pôle « Conseil » devenu **« Outsourcing & Talents IT »**, nouvelles pages
+  **Expertises** et **Talents/vivier**, fourniture + vidéosurveillance).
+- **PHASE 1 (structure) : TERMINÉE et vérifiée** (lint/typecheck/build verts,
+  102 pages statiques). Détail §7.
+- **PHASE 2 (contenu) : À FAIRE.** Détail §8. C'est la prochaine action.
+- Travail commité sur la branche `develop` (commit `feat(v2)…`). Pas encore
+  de tag v2 ni de merge.
 
-### Checklist §14 — résultats validés
-1. ✅ build/lint/typecheck sans erreur (CI : lint → typecheck → seed → build)
-2. ✅ historique git propre + tag v1.0.0
-3. ✅ 3 locales, RTL (⚠️ revue visuelle humaine clair/sombre encore souhaitable)
-4. ✅ zéro texte hors messages/CMS ; zéro `ml-/mr-/text-left`
-5. ✅ admin : article de test créé en 3 langues → visible → supprimé (sur build prod)
-6. ✅ rôle editor restreint ; brouillons invisibles au public
-7. ✅ canonical + hreflang ar/fr/en/x-default sur 15/15 pages testées
-8. ✅ JSON-LD valides (Org+ProfessionalService, Service, Course, Article, FAQPage, Breadcrumb)
-9. ✅ sitemap (72 URLs, alternates) + robots (/admin, /api exclus)
-10. ✅ formulaires : envoi, erreurs, honeypot silencieux, upload ≤ 10 Mo, rate-limit
-11. ✅ Lighthouse mobile local : FR 92/100/100, AR 90/100/100 (Perf/SEO/A11y)
-12. ✅ 404 localisée ; sélecteur de langue conserve la page (slugs localisés)
-13. ✅ TODO-CLIENT.md exhaustif
+## 1. Découpage validé avec le client
 
-## 2. Stack & architecture (résumé)
+Approche **par phases, structure d'abord** (choisie explicitement) :
+- **Phase 1** = tout le code/routing/collections/pages/forms/nav/SEO, avec du
+  contenu court ou des placeholders `[EN_ATTENTE]`, build vert + redirection 301.
+- **Phase 2** = contenu natif complet AR/FR/EN (5 expertises, +3 articles,
+  réécritures), parité messages, tag `v2.0.0`.
+- Ancienne URL `/services/conseil-it-nearshore` → **renommée + 301** (choisi).
+
+## 2. Stack & architecture (inchangée depuis v1)
 
 Next.js **16.2.10** (App Router, Turbopack) · React 19.2 · Payload CMS
 **3.86** intégré (`/admin`) · next-intl 4 (ar défaut RTL /fr /en, pathnames
-localisés — **AR en écriture arabe**) · Tailwind v4 (propriétés logiques
-uniquement) · SQLite dev / Postgres prod (adapter choisi selon
-`DATABASE_URI`) · Resend (fallback console) · `"type": "module"`.
+localisés) · Tailwind v4 (propriétés logiques) · SQLite dev / Postgres prod ·
+Resend (fallback console) · `"type": "module"`.
 
-Fichiers pivots :
-- `src/i18n/routing.ts` — locales + pathnames trilingues (source de vérité URLs)
-- `src/payload.config.ts` — CMS (collections dans `src/collections/`, global `src/globals/settings.ts`)
-- `src/lib/localized-path.ts` — construction d'URLs sans next-intl (hooks/sitemap/seed)
-- `src/hooks/revalidate.ts` — revalidation ciblée + invalidation de gabarit
-- `src/config/company.ts` — placeholders `[EN_ATTENTE]` ; `src/config/editorial.ts` — slugs seedés (maillage interne)
-- `src/seed/` — seed idempotent (`npm run seed`) + `check-lengths.ts` (garde-fou SEO)
-- `messages/{ar,fr,en}.json` — 400 clés/locale, parité vérifiée
-- Docs : `README.md` (déploiement), `DECISIONS.md` (24 arbitrages), `TODO-CLIENT.md`
+Fichiers pivots (rappel v1) : `src/i18n/routing.ts`, `src/payload.config.ts`,
+`src/lib/localized-path.ts`, `src/hooks/revalidate.ts`, `src/config/company.ts`,
+`src/config/editorial.ts`, `src/seed/`, `messages/{ar,fr,en}.json`.
 
-Identifiants admin locaux : voir `.env` (`PAYLOAD_ADMIN_EMAIL` /
-`PAYLOAD_ADMIN_PASSWORD`) — base SQLite locale `tachfir.db` déjà seedée.
+Identifiants admin locaux : voir `.env`. Base SQLite locale `tachfir.db`
+re-seedée proprement le 18/07 (5 expertises incluses).
 
-## 3. Pièges connus de CET environnement (Windows)
+## 7. PHASE 1 — ce qui a été livré (fait, vérifié)
 
-1. **Hook de garde sur les suppressions** : les commandes Bash contenant `rm`
-   avec chemin absolu ou `cd "D:\..."` sont bloquées. Utiliser des chemins
-   **relatifs** depuis la racine du projet (le cwd y est déjà), ou l'outil
-   PowerShell.
-2. **`kill %1` ne tue PAS le serveur Next** (processus détaché). Utiliser :
-   `powershell "Get-NetTCPConnection -LocalPort 3000 -State Listen | Select -First 1 -Expand OwningProcess | % { Stop-Process -Id $_ -Force }"`.
-3. **curl + URLs arabes** : les caractères non-ASCII deviennent `?` (requête
-   corrompue). Toujours percent-encoder (ou utiliser `node -e "fetch(...)"`).
-4. **Disque C:** : était à 0 octet le 14/07 (cache npm purgé → ~8,9 Go
-   libres). Écrire les logs/fichiers temporaires sur D: (dans le projet),
-   pas dans `$TEMP`.
-5. **`payload run <script>`** appelle `process.exit(0)` dès la fin de
-   l'évaluation du module → les scripts seed doivent utiliser du
-   **top-level await** (jamais `main().then(...)`).
-6. **python3 indisponible** ; node est le couteau suisse.
+**Routing & migration**
+- Pôle renommé `conseil-it-nearshore` → **`outsourcing-talents-it`** (3 locales).
+- **301** dans `src/proxy.ts` (`RENAMED_REDIRECTS`, chemin arabe décodé inclus).
+  Testé : `/fr/services/conseil-it-nearshore` → 301 → nouvelle URL.
+- Nouvelles routes (200 en ar/fr/en) : `/expertises`, `/expertises/[slug]`,
+  `/talents`. Slugs localisés dans `src/i18n/routing.ts` + `EXPERTISE_SLUGS`
+  dans `src/config/editorial.ts`.
 
-## 4. Pièges techniques du projet (déjà résolus — ne pas réintroduire)
+**Collections Payload (nouvelles)** — `src/collections/`
+- `expertises.ts` : landing SEO pilotée CMS (title, tagline, description
+  richText, technologies[], seniorities, modalities, order, seo). Drafts + hooks
+  de revalidation (`expertisesRevalidate` dans `src/hooks/revalidate.ts`).
+  Exporte `EXPERTISE_SENIORITIES` / `EXPERTISE_MODALITIES`.
+- `candidatures.ts` : mini-ATS. `read/update: isAdminOrEditor`, `create: never`
+  (créée via Local API `overrideAccess` uniquement), `delete: isAdmin`.
+  Jamais publique. Statut nouveau/qualifié/entretien/placé + notes internes.
+- `cv-uploads.ts` : CV **PRIVÉS**. `read: isAdminOrEditor` (jamais `anyone`),
+  `create: never`. Stockage `private-uploads/cv` (hors `media`). Testé : URL
+  directe du fichier → **403** anonyme, aucun octet fuité.
+- Enregistrées dans `src/payload.config.ts`. `never` ajouté à `src/access/`.
+- `src/globals/settings.ts` : champ `shortlistBanner` (« Shortlist sous 72 h »).
 
-- **slugify** : NFD → retrait du tashkil seul → NFC (le NFKD cassait les
-  hamzas : الإدارات → الا-دارات). Test : `src/seed/check-lengths.ts`.
-- **satori/next-og n'a pas d'algorithme bidi** : les titres AR des images OG
-  sont rendus mot-par-mot en flex `row-reverse` (`src/app/api/og/route.tsx`).
-- **Next 16** : `revalidateTag(tag, { expire: 0 })` (2 arguments) ;
-  `src/proxy.ts` remplace middleware.ts.
-- **Revalidation à la suppression** : le hook ne connaît que le slug de la
-  locale de la requête → invalidation de gabarit `/[locale]/blog/[slug]`
-  (+ variante `/(frontend)/...`) en plus des chemins précis.
-- **Polices** : seul Inter est préchargé (`preload: false` sur AR/display) —
-  c'est ce qui tient le score Lighthouse mobile ≥ 90. Ne pas « optimiser » en
-  re-préchargeant.
-- **Peer deps Payload 3.86** : next `>=15.4.11 <15.5.0 || >=16.2.6 <17` —
-  rester sur Next 16.x lors des mises à jour.
-- Champ SEO `metaDescription` ≤ 155 (validé par le CMS) ; lancer
-  `npx payload run src/seed/check-lengths.ts` après toute retouche du seed.
+**Pages** — `src/app/(frontend)/[locale]/`
+- `services/outsourcing-talents-it/page.tsx` : réutilise `ServicePage`
+  (namespace `serviceOutsourcing`). L'ancien dossier `conseil-it-nearshore` a
+  été supprimé.
+- `expertises/page.tsx` (hub, cartes CMS) + `expertises/[slug]/page.tsx`
+  (détail : richText, technos, séniorités/modalités, JSON-LD `Service`,
+  `SetAlternates` pour le sélecteur de langue).
+- `talents/page.tsx` : hero + `TalentForm` + aside « pourquoi nous rejoindre ».
 
-## 5. Commandes utiles
+**Formulaires & API**
+- `src/components/forms/talent-form.tsx` + `src/app/api/talents/route.ts` :
+  crée un CV privé (`cv-uploads`) puis une `candidatures` (Local API,
+  `overrideAccess`), puis email de notification (CV **non** joint). Testé
+  bout-en-bout (PDF valide → 200, PDF invalide/non-PDF → 400).
+- `src/lib/schemas.ts` : `talentSchema`, `TALENT_SENIORITIES`, `CV_ACCEPT`,
+  `isAllowedCvType`. `QUOTE_TYPES` : `conseil` → `outsourcing`.
+- `src/app/api/quote/route.ts` : libellés types mis à jour.
+
+**SEO / nav / footer**
+- `areaServed` = **MA/FR/BE/CA/AE/SA/QA** (`org-jsonld.tsx`, `service-page.tsx`,
+  détail expertise).
+- `src/app/sitemap.ts` : + `/expertises`, `/talents`, + collection `expertises`
+  dans les entrées CMS ; ancien `conseil` retiré.
+- `main-nav.tsx` (dropdown Services + Expertises) & `footer.tsx` (lien
+  « Consultants : rejoignez notre vivier » → `/talents`) mis à jour.
+
+**i18n** — `messages/{ar,fr,en}.json` : **880 clés à parité** (vérifié).
+Nouveaux namespaces `serviceOutsourcing`, `expertisesPage`, `talentsPage`,
+`forms.talent` ; `nav`/`meta`/`footer`/`forms.quote.type.options` complétés.
+
+**Seed** — `src/seed/content/expertises-data.ts` : 5 expertises seedées
+(Java/Spring, Angular/React, ServiceNow, Pentest, DevOps & Cloud) avec
+**accroches réelles** mais **description `[EN_ATTENTE]`** (contenu Phase 2).
+`seedExpertises` ajouté dans `src/seed/content/index.ts` ; `shortlistBanner`
+ajouté dans `src/seed/index.ts`.
+
+## 8. PHASE 2 — prochaines actions (À FAIRE)
+
+1. **5 expertises — contenu natif complet** (remplacer les `[EN_ATTENTE]` de la
+   description richText dans `expertises-data.ts`) : 300-500 mots par locale,
+   structure « accroche marché → ce que font nos consultants → séniorités →
+   modalités → mini-FAQ → CTA ». **Angle par locale** (spec §7.1) : FR →
+   France/Belgique/Canada ; AR & EN → Golfe (EAU/KSA/Qatar). Optimiser sur
+   « consultant/développeur {techno} ». Après édition : `npm run seed` sur base
+   vierge (`rm -f tachfir.db*` d'abord) et **respecter maxLength 155** des
+   `seo.metaDescription` (le seed échoue sinon — vécu en Phase 1).
+2. **Blog 9 → 12** : nouvel article ×3 locales « Pourquoi les entreprises du
+   Golfe choisissent le Maroc pour le تعهيد IT ». Ajouter `POST_SLUGS` +
+   fichier `src/seed/content/post-golfe.ts` + branchement dans
+   `src/seed/content/index.ts`. Réviser aussi les 3 articles existants (réfs
+   réglementaires — voir TODO-CLIENT).
+3. **Page Outsourcing & Talents** : réécriture native (le namespace
+   `serviceOutsourcing` reprend pour l'instant le contenu de `serviceConsulting`
+   avec hero adapté). Ajouter les 4 offres, la **timeline « brief → shortlist
+   72 h → entretiens → démarrage »**, arguments FR vs AR/EN (Golfe), liens vers
+   les 5 expertises.
+4. **Page Fourniture** : ajouter **vidéosurveillance & contrôle d'accès**
+   (`serviceSupply` / page fourniture) — texte + familles + réassurance.
+5. **Docs & release** : mettre à jour `README.md` (guide vivier + ajout
+   expertise), `TODO-CLIENT.md` (données Golfe, CV privés en prod — cf. §10),
+   `DECISIONS.md` (choix v2), puis **tag `v2.0.0`**.
+6. **Nettoyage optionnel** : supprimer les clés messages inutilisées
+   `serviceConsulting` / `meta.serviceConsulting` (laissées en place pour la
+   parité, non référencées).
+
+## 9. Comment reprendre
 
 ```bash
-npm run dev                      # dev (logs → dev-server.log si lancé en bg)
-npm run seed                     # idempotent ; recrée schéma+contenus si base vierge
-npm run build && npm start      # prod locale (nécessaire pour tester la revalidation)
-npm run lint && npm run typecheck
-npm run generate:types           # après changement de collections Payload
-# reset base locale : rm -f tachfir.db* && rm -rf media && npm run seed
-# lighthouse (Edge) :
-# CHROME_PATH="C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" \
-#   npx lighthouse http://localhost:3000/fr --form-factor=mobile --chrome-flags="--headless=new"
+# 1) lire ce fichier + la spec à jour
+#    docs/PROMPT-CLAUDE-CODE-TACHFIR.md (source de vérité v2)
+# 2) base locale propre + serveur
+rm -f tachfir.db* && rm -rf media private-uploads && npm run seed
+npm run dev            # http://localhost:3000
+# 3) attaquer la Phase 2 §8 (commencer par les 5 expertises)
+# 4) garde-fous avant commit :
+npm run lint && npm run typecheck && npm run build
 ```
 
-## 6. Prochaines actions possibles
+## 10. Pièges découverts en Phase 1 (à retenir)
 
-**Côté client (bloquantes pour la mise en ligne)** — détail dans `TODO-CLIENT.md` :
-push GitHub + Vercel + Neon + Blob + Resend + vraies données NAP/logo/témoignages,
-changer le mot de passe admin, Search Console.
+1. **CV privés en PRODUCTION** : `cv-uploads` est sur disque avec access control
+   (OK en dev/serverless éphémère). Le plugin Vercel Blob rend les fichiers
+   **publics** → ne PAS y brancher `cv-uploads`. Pour la prod, prévoir un
+   stockage privé (R2/S3 privé + URLs signées) — à décider en Phase 2/prod.
+2. **`validatePDF` de Payload** (`checkFileRestrictions`) exige un vrai PDF :
+   en-tête `%PDF-` **et** `xref` + `%%EOF` dans les 1024 derniers octets. Un PDF
+   bidon est rejeté « Invalid PDF file » (comportement voulu). Pour tester,
+   utiliser un vrai PDF.
+3. **Détection de locale** : `/` et les URL arabes non préfixées redirigent vers
+   `/fr` si le navigateur a un cookie `NEXT_LOCALE=fr` (visite FR antérieure).
+   Un visiteur neuf (ou `curl` sans cookie) obtient bien l'arabe. Non-bug.
+4. **Seed partiel = fallback silencieux** : si une création multi-locale échoue
+   après le `create` (ar) mais avant les `update` (fr/en), le doc existe en ar
+   et les autres locales retombent en fallback arabe. En cas d'échec de seed,
+   **réinitialiser la base** plutôt que re-seeder par-dessus.
+5. **`create: never` + `overrideAccess: true`** : le pattern retenu pour les
+   collections alimentées uniquement par une API route serveur (candidatures,
+   cv-uploads). Bloque la création REST publique tout en laissant passer la
+   Local API serveur.
 
-**Côté dev (améliorations non bloquantes)** :
-- Revue visuelle humaine RTL clair/sombre (checklist §14.3, seule réserve).
-- Live preview Payload (reporté — DECISIONS n° 9).
-- Rate-limit distribué (Upstash/WAF) si spam réel (DECISIONS n° 18).
-- Upload > 4,5 Mo sur Vercel : passer par upload direct Blob (DECISIONS n° 19).
-- Générer la migration Postgres initiale au moment du premier déploiement
-  (README §4.6) — volontairement non commitée (dialecte spécifique).
+## 11. Pièges d'environnement v1 (toujours valables)
+
+1. Hook de garde : `rm` avec chemin **absolu** ou `cd "D:\..."` bloqué → utiliser
+   des chemins **relatifs** (le cwd est déjà la racine) ou l'outil PowerShell.
+2. `kill %1` ne tue pas Next : `powershell "Get-NetTCPConnection -LocalPort 3000
+   -State Listen | Select -First 1 -Expand OwningProcess | % { Stop-Process -Id
+   $_ -Force }"`.
+3. `curl` + URL arabes → `?` : percent-encoder ou `node -e "fetch(...)"`.
+4. Écrire logs/temporaires sur D: (dans le projet), pas dans `$TEMP` (C: serré).
+5. `payload run <script>` = **top-level await** obligatoire.
+6. Rester sur Next 16.x (peer deps Payload 3.86).
+7. `slug` AR : NFD → retrait tashkil → NFC (jamais NFKD). Voir
+   `src/seed/check-lengths.ts`.

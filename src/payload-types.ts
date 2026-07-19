@@ -69,9 +69,12 @@ export interface Config {
   collections: {
     posts: Post;
     formations: Formation;
+    expertises: Expertise;
     testimonials: Testimonial;
     clients: Client;
     media: Media;
+    candidatures: Candidature;
+    'cv-uploads': CvUpload;
     users: User;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
@@ -82,9 +85,12 @@ export interface Config {
   collectionsSelect: {
     posts: PostsSelect<false> | PostsSelect<true>;
     formations: FormationsSelect<false> | FormationsSelect<true>;
+    expertises: ExpertisesSelect<false> | ExpertisesSelect<true>;
     testimonials: TestimonialsSelect<false> | TestimonialsSelect<true>;
     clients: ClientsSelect<false> | ClientsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    candidatures: CandidaturesSelect<false> | CandidaturesSelect<true>;
+    'cv-uploads': CvUploadsSelect<false> | CvUploadsSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
@@ -270,6 +276,62 @@ export interface Formation {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "expertises".
+ */
+export interface Expertise {
+  id: number;
+  /**
+   * e.g. “Java / Spring”, “ServiceNow”.
+   */
+  title: string;
+  /**
+   * Leave empty to generate from the title. Arabic slugs stay in Arabic script (SEO).
+   */
+  slug: string;
+  /**
+   * Shown in lists and used as default SEO description.
+   */
+  tagline: string;
+  description: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  technologies?:
+    | {
+        name: string;
+        id?: string | null;
+      }[]
+    | null;
+  seniorities?: ('junior' | 'confirme' | 'senior')[] | null;
+  modalities?: ('regie' | 'forfait' | 'placement')[] | null;
+  order?: number | null;
+  seo?: {
+    /**
+     * Empty = content title. Final pattern: “… | Tachfir”
+     */
+    metaTitle?: string | null;
+    /**
+     * Empty = content excerpt/summary.
+     */
+    metaDescription?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "testimonials".
  */
 export interface Testimonial {
@@ -296,6 +358,46 @@ export interface Client {
   order?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "candidatures".
+ */
+export interface Candidature {
+  id: number;
+  fullName: string;
+  email: string;
+  phone?: string | null;
+  expertise?: (number | null) | Expertise;
+  expertiseOther?: string | null;
+  seniority?: ('junior' | 'confirme' | 'senior') | null;
+  availability?: string | null;
+  remote?: string | null;
+  linkedin?: string | null;
+  cv?: (number | null) | CvUpload;
+  consent?: boolean | null;
+  status?: ('nouveau' | 'qualifie' | 'entretien' | 'place') | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cv-uploads".
+ */
+export interface CvUpload {
+  id: number;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -357,6 +459,10 @@ export interface PayloadLockedDocument {
         value: number | Formation;
       } | null)
     | ({
+        relationTo: 'expertises';
+        value: number | Expertise;
+      } | null)
+    | ({
         relationTo: 'testimonials';
         value: number | Testimonial;
       } | null)
@@ -367,6 +473,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'candidatures';
+        value: number | Candidature;
+      } | null)
+    | ({
+        relationTo: 'cv-uploads';
+        value: number | CvUpload;
       } | null)
     | ({
         relationTo: 'users';
@@ -475,6 +589,34 @@ export interface FormationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "expertises_select".
+ */
+export interface ExpertisesSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  tagline?: T;
+  description?: T;
+  technologies?:
+    | T
+    | {
+        name?: T;
+        id?: T;
+      };
+  seniorities?: T;
+  modalities?: T;
+  order?: T;
+  seo?:
+    | T
+    | {
+        metaTitle?: T;
+        metaDescription?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "testimonials_select".
  */
 export interface TestimonialsSelect<T extends boolean = true> {
@@ -551,6 +693,44 @@ export interface MediaSelect<T extends boolean = true> {
               filename?: T;
             };
       };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "candidatures_select".
+ */
+export interface CandidaturesSelect<T extends boolean = true> {
+  fullName?: T;
+  email?: T;
+  phone?: T;
+  expertise?: T;
+  expertiseOther?: T;
+  seniority?: T;
+  availability?: T;
+  remote?: T;
+  linkedin?: T;
+  cv?: T;
+  consent?: T;
+  status?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cv-uploads_select".
+ */
+export interface CvUploadsSelect<T extends boolean = true> {
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -641,6 +821,10 @@ export interface Setting {
    * e.g. “Reply within 24–48 h” — shown near quote/contact CTAs.
    */
   responseBanner?: string | null;
+  /**
+   * e.g. “Shortlist within 72 h” — shown near outsourcing/expertise CTAs.
+   */
+  shortlistBanner?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -659,6 +843,7 @@ export interface SettingsSelect<T extends boolean = true> {
   rc?: T;
   deliveryZones?: T;
   responseBanner?: T;
+  shortlistBanner?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

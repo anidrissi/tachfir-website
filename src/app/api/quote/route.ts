@@ -8,9 +8,9 @@ export const runtime = 'nodejs';
 const LABELS: Record<string, string> = {
   developpement: 'Développement web / mobile',
   cybersecurite: 'Cybersécurité',
-  conseil: 'Conseil IT / nearshore',
+  outsourcing: 'Outsourcing & Talents IT',
   formation: 'Formation',
-  fourniture: 'Fourniture de matériel',
+  fourniture: 'Fourniture de matériel & surveillance',
   lt50k: '< 50 000 MAD',
   '50to150k': '50 000 – 150 000 MAD',
   '150to500k': '150 000 – 500 000 MAD',

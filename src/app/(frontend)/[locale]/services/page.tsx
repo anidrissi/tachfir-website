@@ -26,7 +26,7 @@ const CARDS: Array<{
 }> = [
   { key: 'dev', href: '/services/developpement-web-mobile', icon: Code2 },
   { key: 'cyber', href: '/services/cybersecurite', icon: ShieldCheck },
-  { key: 'consulting', href: '/services/conseil-it-nearshore', icon: Users },
+  { key: 'consulting', href: '/services/outsourcing-talents-it', icon: Users },
   { key: 'formation', href: '/formations', icon: GraduationCap },
 ];
 
@@ -98,7 +98,7 @@ export default async function ServicesHubPage({ params }: Props) {
             <p className="mt-4 max-w-2xl leading-relaxed text-muted">{t('nearshore.text')}</p>
           </div>
           <ButtonLink
-            href="/services/conseil-it-nearshore"
+            href="/services/outsourcing-talents-it"
             size="lg"
             className="justify-self-start lg:justify-self-end"
           >

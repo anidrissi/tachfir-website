@@ -48,7 +48,9 @@ function slugsOf(doc: Record<string, unknown>): SlugByLocale {
   return (slug ?? {}) as SlugByLocale;
 }
 
-function detailPaths(base: '/blog/[slug]' | '/formations/[slug]', slugs: SlugByLocale): string[] {
+type DetailRoute = '/blog/[slug]' | '/formations/[slug]' | '/expertises/[slug]';
+
+function detailPaths(base: DetailRoute, slugs: SlugByLocale): string[] {
   const out = new Set<string>();
   for (const locale of routing.locales) {
     const slug = slugs[locale as Locale];
@@ -60,11 +62,18 @@ function detailPaths(base: '/blog/[slug]' | '/formations/[slug]', slugs: SlugByL
   return [...out];
 }
 
-function makeCollectionHooks(kind: 'posts' | 'formations') {
-  const listRoute: AppPathname = kind === 'posts' ? '/blog' : '/formations';
-  const detailRoute = (kind === 'posts' ? '/blog/[slug]' : '/formations/[slug]') as
-    | '/blog/[slug]'
-    | '/formations/[slug]';
+const COLLECTION_ROUTES: Record<
+  'posts' | 'formations' | 'expertises',
+  { list: AppPathname; detail: DetailRoute }
+> = {
+  posts: { list: '/blog', detail: '/blog/[slug]' },
+  formations: { list: '/formations', detail: '/formations/[slug]' },
+  expertises: { list: '/expertises', detail: '/expertises/[slug]' },
+};
+
+function makeCollectionHooks(kind: 'posts' | 'formations' | 'expertises') {
+  const listRoute = COLLECTION_ROUTES[kind].list;
+  const detailRoute = COLLECTION_ROUTES[kind].detail;
 
   const afterChange: CollectionAfterChangeHook = async ({ doc, previousDoc, req, context }) => {
     if (context?.disableRevalidate) return doc;
@@ -96,6 +105,7 @@ function makeCollectionHooks(kind: 'posts' | 'formations') {
 
 export const postsRevalidate = makeCollectionHooks('posts');
 export const formationsRevalidate = makeCollectionHooks('formations');
+export const expertisesRevalidate = makeCollectionHooks('expertises');
 
 /** Témoignages & clients : accueil + page références. */
 export const homeAndReferencesRevalidate: {

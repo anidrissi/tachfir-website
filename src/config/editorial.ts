@@ -40,6 +40,34 @@ export const FORMATION_SLUGS = {
   },
 } as const satisfies Record<string, LocalizedSlug>;
 
+export const EXPERTISE_SLUGS = {
+  java: {
+    fr: 'consultant-java-spring',
+    ar: 'مطور-جافا-سبرينغ',
+    en: 'java-spring-consultant',
+  },
+  angular: {
+    fr: 'developpeur-angular-react',
+    ar: 'مطور-أنغولار-رياكت',
+    en: 'angular-react-developer',
+  },
+  servicenow: {
+    fr: 'consultant-servicenow',
+    ar: 'استشاري-servicenow',
+    en: 'servicenow-consultant',
+  },
+  pentest: {
+    fr: 'expert-test-intrusion-pentest',
+    ar: 'خبير-اختبار-الاختراق',
+    en: 'penetration-testing-expert',
+  },
+  devops: {
+    fr: 'ingenieur-devops-cloud',
+    ar: 'مهندس-ديف-أوبس-كلاود',
+    en: 'devops-cloud-engineer',
+  },
+} as const satisfies Record<string, LocalizedSlug>;
+
 export const POST_SLUGS = {
   marchesPublics: {
     fr: 'marches-publics-reussir-commande-materiel-informatique-maroc',

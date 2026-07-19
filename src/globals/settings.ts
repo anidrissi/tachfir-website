@@ -108,5 +108,22 @@ export const Settings: GlobalConfig = {
         },
       },
     },
+    {
+      name: 'shortlistBanner',
+      type: 'text',
+      localized: true,
+      label: {
+        fr: 'Bandeau outsourcing (CTA)',
+        ar: 'شريط التعهيد (قرب أزرار الطلب)',
+        en: 'Outsourcing banner (CTA)',
+      },
+      admin: {
+        description: {
+          fr: 'Ex. « Shortlist sous 72 h » — affiché près des CTA outsourcing/expertises.',
+          ar: 'مثال: «قائمة مختصرة خلال 72 ساعة» — يظهر قرب أزرار التعهيد/الخبرات.',
+          en: 'e.g. “Shortlist within 72 h” — shown near outsourcing/expertise CTAs.',
+        },
+      },
+    },
   ],
 };

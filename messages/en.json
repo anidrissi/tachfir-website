@@ -34,7 +34,11 @@
     "contact": "Contact",
     "about": "About",
     "quote": "Request a quote",
-    "mainNavAria": "Main navigation"
+    "mainNavAria": "Main navigation",
+    "servicesOutsourcing": "Outsourcing & IT Talent",
+    "servicesExpertises": "Expertise",
+    "talents": "Talent",
+    "talentsJoin": "Consultants: join our talent pool"
   },
   "lang": {
     "label": "Language",
@@ -48,7 +52,7 @@
     "dark": "Dark theme"
   },
   "footer": {
-    "description": "Moroccan IT services company: web & mobile development, cybersecurity, IT consulting & nearshore, training and IT hardware supply.",
+    "description": "Moroccan IT services company: web & mobile development, cybersecurity, outsourcing & IT talent, training, and supply of IT and surveillance equipment.",
     "colServices": "Services",
     "colCompany": "Company",
     "colContact": "Contact details",
@@ -126,6 +130,18 @@
     "privacy": {
       "title": "Privacy policy (Law 09-08)",
       "description": "How Tachfir collects, uses and protects your personal data, in line with Moroccan law 09-08 and CNDP requirements."
+    },
+    "serviceOutsourcing": {
+      "title": "IT outsourcing & staff augmentation Morocco",
+      "description": "Staff augmentation, offshoring-nearshoring and IT talent placement (Java, Angular, ServiceNow, DevOps, pentest). Shortlist within 72 h."
+    },
+    "expertises": {
+      "title": "IT experts: Java, Angular, ServiceNow, DevOps",
+      "description": "Hire certified IT consultants: Java/Spring, Angular/React, ServiceNow, penetration testing, DevOps & Cloud. Profiles available, shortlist within 72 h."
+    },
+    "talents": {
+      "title": "IT consultants: join the Tachfir talent pool",
+      "description": "Assignments in Morocco, France and the Gulf, remote or on-site. Submit your CV and join Tachfir’s IT talent pool."
     }
   },
   "home": {
@@ -157,8 +173,8 @@
         "text": "Penetration tests and security audits by certified consultants. Clear report, remediation plan, retest included."
       },
       "consulting": {
-        "title": "IT consulting & nearshore",
-        "text": "Staff augmentation, project assistance, maintenance: certified profiles that strengthen your teams in Morocco and France, with transparent reporting."
+        "title": "Outsourcing & IT Talent",
+        "text": "Staff augmentation, offshoring and placement of certified IT profiles — from Morocco to France, Belgium, Canada and the Gulf."
       },
       "formation": {
         "title": "Training",
@@ -217,8 +233,8 @@
         "text": "Penetration testing, security audits and remediation support to protect your digital assets."
       },
       "consulting": {
-        "title": "IT consulting & nearshore",
-        "text": "Staff augmentation, project assistance and maintenance in Morocco and for France: the right profiles, at the right time, at the right cost."
+        "title": "Outsourcing & IT Talent",
+        "text": "Staff augmentation, offshoring, service center and talent hunting: the right IT profiles, shortlist within 72 h."
       },
       "formation": {
         "title": "Certified training",
@@ -275,7 +291,14 @@
     },
     "stack": {
       "title": "Our stack",
-      "items": ["React / Next.js", "Spring Boot / Java", "AWS & Azure", "Figma (UX/UI)", "Scrum / SAFe", "CI/CD & containers"]
+      "items": [
+        "React / Next.js",
+        "Spring Boot / Java",
+        "AWS & Azure",
+        "Figma (UX/UI)",
+        "Scrum / SAFe",
+        "CI/CD & containers"
+      ]
     },
     "deliverables": {
       "title": "What you receive",
@@ -774,15 +797,24 @@
     "groups": {
       "agile": {
         "title": "Agility & delivery",
-        "items": ["Professional Scrum Master (PSM)", "Certified SAFe® 5"]
+        "items": [
+          "Professional Scrum Master (PSM)",
+          "Certified SAFe® 5"
+        ]
       },
       "dev": {
         "title": "Development",
-        "items": ["Oracle Certified Professional Java", "Oracle Certified Expert Java EE"]
+        "items": [
+          "Oracle Certified Professional Java",
+          "Oracle Certified Expert Java EE"
+        ]
       },
       "network": {
         "title": "Networking & cybersecurity",
-        "items": ["CCNA Switching / Routing / Wireless", "Cisco CyberOps Associate"]
+        "items": [
+          "CCNA Switching / Routing / Wireless",
+          "Cisco CyberOps Associate"
+        ]
       },
       "cloud": {
         "title": "Cloud & DevOps",
@@ -990,21 +1022,42 @@
         "options": {
           "developpement": "Web / mobile development",
           "cybersecurite": "Cybersecurity (pentest, audit)",
-          "conseil": "IT consulting / nearshore",
+          "outsourcing": "Outsourcing & IT Talent",
           "formation": "Training",
-          "fourniture": "Hardware supply"
+          "fourniture": "IT & surveillance equipment supply"
         }
       },
-      "company": { "label": "Company / organization", "placeholder": "Your organization's name" },
+      "company": {
+        "label": "Company / organization",
+        "placeholder": "Your organization's name"
+      },
       "sector": {
         "label": "Sector",
-        "options": { "public": "Public / administration", "prive": "Private" }
+        "options": {
+          "public": "Public / administration",
+          "prive": "Private"
+        }
       },
-      "ice": { "label": "ICE (optional)", "placeholder": "Company identifier (Morocco)" },
-      "name": { "label": "Full name", "placeholder": "Your full name" },
-      "role": { "label": "Role", "placeholder": "e.g. CIO, buyer, manager…" },
-      "email": { "label": "Work email", "placeholder": "you@organization.com" },
-      "phone": { "label": "Phone", "placeholder": "+212 6 XX XX XX XX" },
+      "ice": {
+        "label": "ICE (optional)",
+        "placeholder": "Company identifier (Morocco)"
+      },
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your full name"
+      },
+      "role": {
+        "label": "Role",
+        "placeholder": "e.g. CIO, buyer, manager…"
+      },
+      "email": {
+        "label": "Work email",
+        "placeholder": "you@organization.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+212 6 XX XX XX XX"
+      },
       "description": {
         "label": "Describe your need",
         "placeholder": "Describe your project, order or need in a few lines…"
@@ -1043,10 +1096,22 @@
       "error": "Sending failed. Please try again, or write to us directly by email."
     },
     "contact": {
-      "name": { "label": "Full name", "placeholder": "Your full name" },
-      "email": { "label": "Email", "placeholder": "you@example.com" },
-      "phone": { "label": "Phone (optional)", "placeholder": "+212 6 XX XX XX XX" },
-      "message": { "label": "Message", "placeholder": "Your question or need…" },
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "phone": {
+        "label": "Phone (optional)",
+        "placeholder": "+212 6 XX XX XX XX"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your question or need…"
+      },
       "consent": "I agree that my data will be processed by Tachfir to answer my request, in accordance with Law 09-08.",
       "submit": "Send message",
       "sending": "Sending…",
@@ -1063,7 +1128,246 @@
       "minMessage": "Please give a minimum of detail (10 characters)",
       "fileSize": "File too large (10 MB max)",
       "fileType": "Format not accepted (PDF or image only)",
-      "consent": "Your consent is required to process the request"
+      "consent": "Your consent is required to process the request",
+      "cvType": "The CV must be a PDF",
+      "cvRequired": "Please attach your CV (PDF)"
+    },
+    "talent": {
+      "title": "Submit my application",
+      "fullName": {
+        "label": "Full name",
+        "placeholder": "First and last name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+212 6 00 00 00 00"
+      },
+      "linkedin": {
+        "label": "LinkedIn (optional)",
+        "placeholder": "https://linkedin.com/in/…"
+      },
+      "expertise": {
+        "label": "Main expertise",
+        "other": "Other"
+      },
+      "expertiseOther": {
+        "label": "Specify your expertise",
+        "placeholder": "e.g. Data, SAP, .NET…"
+      },
+      "seniority": {
+        "label": "Seniority",
+        "options": {
+          "junior": "Junior",
+          "confirme": "Mid-level",
+          "senior": "Senior"
+        }
+      },
+      "availability": {
+        "label": "Availability (optional)",
+        "placeholder": "e.g. immediate, within 1 month"
+      },
+      "remote": {
+        "label": "Remote / mobility (optional)",
+        "placeholder": "e.g. remote, hybrid, mobile"
+      },
+      "cv": {
+        "label": "CV (PDF)",
+        "hint": "PDF only, 10 MB maximum",
+        "remove": "Remove file"
+      },
+      "consent": "I agree that Tachfir may keep my data and CV to offer me assignments (Law 09-08).",
+      "success": {
+        "title": "Application sent",
+        "text": "Thank you! Your profile has joined our talent pool. We’ll contact you as soon as an assignment matches."
+      },
+      "error": "Sending failed. Please try again or email us directly.",
+      "sending": "Sending…",
+      "submit": "Send my application"
+    }
+  },
+  "serviceOutsourcing": {
+    "hero": {
+      "eyebrow": "Outsourcing & IT Talent",
+      "title": "IT outsourcing & talent: the right profiles, from Morocco to the Gulf",
+      "intro": "Staff augmentation, offshoring-nearshoring, service center and IT talent hunting. We strengthen your teams with certified consultants — France, Belgium, Canada and the Gulf — with a shortlist within 72 h.",
+      "cta": "Describe your need"
+    },
+    "problem": {
+      "title": "Your challenge",
+      "text": "Hiring a good developer or an experienced project manager takes months — and your projects won't wait. For French companies there is also the cost equation: the talent exists, but not always at the right rate. Moroccan nearshore answers both: certified skills, available quickly, in your time zone and your language."
+    },
+    "approach": {
+      "title": "How we work",
+      "steps": [
+        {
+          "title": "Need qualification",
+          "text": "Skills, seniority, project context, duration: we scope precisely before proposing."
+        },
+        {
+          "title": "Pre-screened profiles",
+          "text": "Qualified CVs and technical interviews organized quickly — you validate, we commit."
+        },
+        {
+          "title": "Guided onboarding",
+          "text": "Structured onboarding, secured environment, daily check-ins during the first weeks."
+        },
+        {
+          "title": "Steering & reporting",
+          "text": "Regular activity reports, agreed KPIs, monthly governance meeting."
+        },
+        {
+          "title": "Controlled scale-up",
+          "text": "Team extension, knowledge transfer or reversibility: everything is contractual."
+        }
+      ]
+    },
+    "nearshoreArgs": {
+      "title": "Why Tachfir for your extended teams",
+      "items": [
+        {
+          "title": "Aligned time zone",
+          "text": "0 to 1 hour difference with Paris: your teams work in real time, not in shifts."
+        },
+        {
+          "title": "Native French",
+          "text": "Meetings, documentation, code reviews: everything happens in French, without friction."
+        },
+        {
+          "title": "Optimized costs",
+          "text": "Rates significantly below equivalent services in France, with equally certified skills."
+        },
+        {
+          "title": "Clear framework",
+          "text": "Adapted contracts, GDPR clauses, confidentiality and intellectual property locked down."
+        }
+      ]
+    },
+    "deliverables": {
+      "title": "How we engage",
+      "items": [
+        "Staff augmentation: one or more consultants embedded in your teams",
+        "Project assistance: scoping, requirements, project steering",
+        "Application maintenance (AM) with service commitments",
+        "Dedicated nearshore team managed by Tachfir",
+        "IT audit and master plan",
+        "Knowledge transfer and change support"
+      ]
+    },
+    "why": {
+      "title": "Why Tachfir",
+      "points": [
+        {
+          "title": "Certified consultants",
+          "text": "PSM, SAFe, Java, cloud, Kubernetes: our teams' certifications are verifiable — and verified by our most demanding clients."
+        },
+        {
+          "title": "Used to large accounts",
+          "text": "Intelcia, Proxiad, Alten, SFR: we know the quality and reporting requirements of large organizations."
+        },
+        {
+          "title": "Committed for the long run",
+          "text": "Real mission follow-up, managed replacement if needed, and one goal: every consultant should bring more than the job description."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is the difference between staff augmentation and fixed price?",
+          "a": "In staff augmentation, you manage the consultant embedded in your teams and pay for time spent. In fixed price, we commit to a result, a deadline and a price. Application maintenance often combines both: a fixed base plus work units."
+        },
+        {
+          "q": "Why choose nearshore in Morocco over far offshore?",
+          "a": "Same time zone as Paris (0–1 h difference), fluent French, easy travel (a 3-hour flight), a close working culture and a legal framework proven by hundreds of French companies already operating here. You keep the responsiveness of a local team, at nearshore cost."
+        },
+        {
+          "q": "How quickly can a consultant start?",
+          "a": "For common skills (Java/React development, DevOps, QA), we usually present profiles within one to two weeks. The actual start depends on your validation processes and the access to be provisioned."
+        },
+        {
+          "q": "How do you handle data protection (GDPR / Law 09-08)?",
+          "a": "Standard contractual clauses for transfers, named and logged access, segregated environments, consultant awareness training. Morocco has its own framework (Law 09-08, CNDP) which we apply natively."
+        },
+        {
+          "q": "What kinds of profiles do you provide?",
+          "a": "Front/back/full-stack developers, DevOps and cloud engineers (AWS, Azure, OCI, Kubernetes), cybersecurity consultants, QA engineers, PSM/SAFe-certified Scrum Masters and project managers, and business analysts."
+        },
+        {
+          "q": "Can we start small before scaling?",
+          "a": "We even recommend it: many of our clients start with one consultant or a small maintenance scope, then extend the team once trust and processes are in place."
+        }
+      ]
+    },
+    "related": {
+      "title": "Go further",
+      "quote": "Describe my need",
+      "formation": "Agile project management Scrum & SAFe training",
+      "article": "Read: nearshore in Morocco, why French companies outsource"
+    }
+  },
+  "expertisesPage": {
+    "hero": {
+      "eyebrow": "Expertise",
+      "title": "Our technology expertise",
+      "intro": "Java/Spring, Angular/React, ServiceNow, pentest, DevOps & Cloud: certified consultants, available via staff augmentation, fixed-price or placement — in Morocco and for France, Belgium, Canada and the Gulf."
+    },
+    "card": {
+      "details": "Learn more"
+    },
+    "empty": "Our expertise pages are coming soon. Contact us to receive qualified profiles.",
+    "detail": {
+      "cta": "Describe your need",
+      "ctaTalent": "join our talent pool",
+      "candidateHint": "Are you this profile?",
+      "backToList": "All expertise",
+      "seniorities": "Available seniorities",
+      "modalities": "Engagement modes",
+      "needProfiles": "Need this profile?",
+      "needProfilesText": "Get a shortlist of qualified consultants within 72 h."
+    },
+    "why": {
+      "title": "Why Tachfir",
+      "points": [
+        {
+          "title": "Certified consultants",
+          "text": "Java, Angular, ServiceNow, cloud, security: verifiable skills, proven at IT service firms and large accounts."
+        },
+        {
+          "title": "Fast availability",
+          "text": "A shortlist of qualified profiles within 72 h, with technical interviews arranged without delay."
+        },
+        {
+          "title": "Multiple modes",
+          "text": "Staff augmentation, fixed-price or placement: the engagement mode fits your need and market."
+        }
+      ]
+    },
+    "cta": {
+      "title": "A profile to reinforce?",
+      "text": "Describe your need: we send you a shortlist of qualified consultants within 72 h.",
+      "button": "Describe your need"
+    }
+  },
+  "talentsPage": {
+    "hero": {
+      "eyebrow": "Talent",
+      "title": "Join the Tachfir talent pool",
+      "intro": "Assignments in Morocco, France, Belgium, Canada and the Gulf — remote or on-site. Submit your CV: we get back to you as soon as an assignment matches your profile."
+    },
+    "aside": {
+      "title": "Why join us",
+      "reasons": [
+        "Varied assignments at IT service firms and large accounts",
+        "Remote, hybrid or on-site depending on projects",
+        "Real support and career follow-up",
+        "Projects in Morocco, Europe and the Gulf"
+      ],
+      "confidential": "Your data and CV remain strictly confidential (Law 09-08)."
     }
   }
 }

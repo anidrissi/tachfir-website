@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 /** Maillage interne : catégorie d'article → service lié. */
 const CATEGORY_SERVICE: Record<string, StaticAppPathname> = {
   'marches-publics': '/services/fourniture-informatique',
-  nearshore: '/services/conseil-it-nearshore',
+  nearshore: '/services/outsourcing-talents-it',
   formation: '/formations',
   cybersecurite: '/services/cybersecurite',
   guides: '/services',

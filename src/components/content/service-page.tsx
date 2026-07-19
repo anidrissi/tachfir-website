@@ -20,8 +20,8 @@ type Point = { title: string; text: string };
 
 export type ServicePageProps = {
   locale: Locale;
-  /** Namespace de messages : serviceDev | serviceCyber | serviceConsulting */
-  namespace: 'serviceDev' | 'serviceCyber' | 'serviceConsulting';
+  /** Namespace de messages : serviceDev | serviceCyber | serviceOutsourcing */
+  namespace: 'serviceDev' | 'serviceCyber' | 'serviceOutsourcing';
   pathname: AppPathname;
   relatedFormation: LocalizedSlug;
   relatedPost: LocalizedSlug;
@@ -54,7 +54,7 @@ export async function ServicePage({
     name: t('hero.title'),
     description: t('hero.intro'),
     url: absoluteUrl(company.siteUrl, pathname, locale),
-    areaServed: ['MA', 'FR'],
+    areaServed: ['MA', 'FR', 'BE', 'CA', 'AE', 'SA', 'QA'],
     provider: {
       '@type': 'Organization',
       name: company.name,

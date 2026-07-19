@@ -9,18 +9,22 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return pageMetadata(locale as Locale, 'serviceConsulting', '/services/conseil-it-nearshore');
+  return pageMetadata(
+    locale as Locale,
+    'serviceOutsourcing',
+    '/services/outsourcing-talents-it',
+  );
 }
 
-export default async function ConsultingServicePage({ params }: Props) {
+export default async function OutsourcingServicePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   return (
     <ServicePage
       locale={locale as Locale}
-      namespace="serviceConsulting"
-      pathname="/services/conseil-it-nearshore"
+      namespace="serviceOutsourcing"
+      pathname="/services/outsourcing-talents-it"
       relatedFormation={FORMATION_SLUGS.agile}
       relatedPost={POST_SLUGS.nearshore}
     />

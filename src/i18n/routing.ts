@@ -26,15 +26,30 @@ export const routing = defineRouting({
       fr: '/services/cybersecurite',
       en: '/services/cybersecurity',
     },
-    '/services/conseil-it-nearshore': {
-      ar: '/خدمات/استشارات-معلوماتية-وتعهيد',
-      fr: '/services/conseil-it-nearshore',
-      en: '/services/it-consulting-nearshore',
+    '/services/outsourcing-talents-it': {
+      ar: '/خدمات/التعهيد-والكفاءات',
+      fr: '/services/outsourcing-talents-it',
+      en: '/services/it-outsourcing-talent',
     },
     '/services/fourniture-informatique': {
       ar: '/خدمات/توريد-المعدات-المعلوماتية',
       fr: '/services/fourniture-informatique',
       en: '/services/it-hardware-supply',
+    },
+    '/expertises': {
+      ar: '/الخبرات',
+      fr: '/expertises',
+      en: '/expertise',
+    },
+    '/expertises/[slug]': {
+      ar: '/الخبرات/[slug]',
+      fr: '/expertises/[slug]',
+      en: '/expertise/[slug]',
+    },
+    '/talents': {
+      ar: '/الكفاءات',
+      fr: '/talents',
+      en: '/talents',
     },
     '/formations': {
       ar: '/تكوينات',
@@ -97,4 +112,7 @@ export const routing = defineRouting({
 export type Locale = (typeof routing.locales)[number];
 export type AppPathname = keyof typeof routing.pathnames;
 /** Routes sans segment dynamique (utilisables en href direct). */
-export type StaticAppPathname = Exclude<AppPathname, '/formations/[slug]' | '/blog/[slug]'>;
+export type StaticAppPathname = Exclude<
+  AppPathname,
+  '/formations/[slug]' | '/blog/[slug]' | '/expertises/[slug]'
+>;

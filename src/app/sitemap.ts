@@ -14,8 +14,10 @@ const STATIC_ROUTES: AppPathname[] = [
   '/services',
   '/services/developpement-web-mobile',
   '/services/cybersecurite',
-  '/services/conseil-it-nearshore',
+  '/services/outsourcing-talents-it',
   '/services/fourniture-informatique',
+  '/expertises',
+  '/talents',
   '/formations',
   '/references',
   '/certifications',
@@ -61,9 +63,13 @@ async function cmsEntries(): Promise<Entry[]> {
     const payload = await getPayloadClient();
     const entries: Entry[] = [];
 
-    const sources: Array<{ collection: 'posts' | 'formations'; route: AppPathname }> = [
+    const sources: Array<{
+      collection: 'posts' | 'formations' | 'expertises';
+      route: AppPathname;
+    }> = [
       { collection: 'posts', route: '/blog/[slug]' },
       { collection: 'formations', route: '/formations/[slug]' },
+      { collection: 'expertises', route: '/expertises/[slug]' },
     ];
 
     for (const { collection, route } of sources) {
